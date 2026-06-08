@@ -29,10 +29,15 @@ export const LANGS = [
 
 export const RTL = new Set(["ar"]);
 
+// Las páginas pre-renderizadas por idioma (/en/, /fr/…) inyectan window.__OBS_LNG__
+// para forzar el idioma inicial; en la raíz queda undefined y corre la detección.
+const forced = typeof window !== "undefined" ? window.__OBS_LNG__ : undefined;
+
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
+    lng: forced,
     resources: {
       es: { translation: es }, en: { translation: en }, pt: { translation: pt },
       fr: { translation: fr }, zh: { translation: zh }, ar: { translation: ar },
