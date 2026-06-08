@@ -15,32 +15,81 @@
     "noResults": "无结果", "average": "平均", "share": "分享观测站",
     "shareSub": "传播证据", "copy": "复制", "copied": "已复制！", "loading": "正在加载数据…"
   },
-  "badge": { "label": "ⓘ 综合 · 查看来源", "modalTitle": "关于数据", "sources": "来源", "dismiss": "明白了" },
+  "badge": {
+    "label": "ⓘ 综合 · 查看来源", "modalTitle": "关于数据",
+    "states": "每个指标都有状态：verified（来自报告/研究的可引用数据）或 estimate（来自多个来源的合理综合；请作为数量级看待）。文献库收录带有 DOI/来源的研究。",
+    "sources": "来源",
+    "correlation": "相关性 ≠ 因果：屏幕使用与心理健康之间的关联平均为小到中等，且取决于具体情境。",
+    "dismiss": "明白了"
+  },
   "metric": { "access": "智能手机普及", "hours": "每日小时数", "age": "首部手机年龄", "social": "社交媒体使用", "internet": "互联网普及" },
   "panorama": {
     "title": "全球概览", "subtitle": "各国青少年智能手机和互联网的获取、使用与强度。",
     "kpiAccess": "智能手机普及（平均）", "kpiHours": "每日屏幕小时数（平均）",
     "kpiAge": "首部手机年龄（平均）", "kpiSocial": "社交媒体使用（平均）",
-    "indicatorLabel": "地图指标：", "mapTitle": "交互式地图", "rankingTitle": "国家排名 — {{metric}}"
+    "indicatorLabel": "地图指标：", "mapTitle": "交互式地图",
+    "mapSubtitle": "大小与颜色 ∝ 指标值 · 点击国家查看详情", "rankingTitle": "国家排名 — {{metric}}", "rankingSub": "前 14 名"
   },
   "mental": {
     "title": "心理健康", "subtitle": "自我报告的患病率及其与屏幕时间的关系。",
     "kpiAnxiety": "焦虑（平均）", "kpiDepression": "抑郁（平均）", "kpiCyber": "网络欺凌受害者（平均）", "kpiSleep": "睡眠问题（平均）",
-    "byCountry": "各国心理健康指标", "corrTitle": "相关性：屏幕时间 ↔ 抑郁症状"
+    "byCountry": "各国心理健康指标", "byCountrySub": "青少年百分比（自我报告，综合）",
+    "corrTitle": "相关性：屏幕时间 ↔ 抑郁症状",
+    "corrWarning": "⚠ 关联 ≠ 因果。文献报告的平均效应为小到中等，取决于情境、使用类型与既有因素。",
+    "dim": { "anxiety": "焦虑", "depression": "抑郁", "loneliness": "孤独", "cyber": "网络欺凌", "sleep": "睡眠不佳" }
   },
-  "education": { "title": "教育", "useVsDistract": "教育用途 vs. 分心", "skillsVsPerf": "数字技能与学业感知" },
-  "risks": { "title": "数字风险", "prevTitle": "风险患病率", "byAgeTitle": "按年龄的问题性使用" },
-  "family": { "title": "家庭与父母调解", "subtitle": "规则、监督、家长控制与首部手机年龄。", "stratTitle": "父母调解策略", "agesTitle": "给予首部手机的年龄" },
-  "latam": { "title": "拉丁美洲", "subtitle": "区域聚焦。来源：CEPAL、各国调查、ITU。", "usageTitle": "获取与连接", "wellTitle": "福祉指标", "tableTitle": "拉美对比表" },
-  "peru": { "title": "秘鲁", "sourcesTitle": "国家来源", "studiesTitle": "文献库中的区域/国家研究" },
-  "library": { "title": "科学文献库", "subtitle": "按年份、样本、发现与 DOI/来源索引的研究与报告。", "count": "{{n}} 项研究", "mod": { "all": "全部" } },
+  "education": {
+    "title": "教育",
+    "note": "智能手机既是工具也是干扰：用于教学可改善知识获取，但课堂上的娱乐性使用与较低成绩相关（OECD/PISA 2022）。关键在于使用的设计，而不仅是设备本身。",
+    "useVsDistract": "教育用途 vs. 分心", "useVsDistractSub": "各国青少年百分比",
+    "skillsVsPerf": "数字技能与学业感知", "skillsVsPerfSub": "负面感知 = 报告的不利影响",
+    "legendUse": "教育用途", "legendDistract": "课堂分心", "legendSkills": "数字技能", "legendPerf": "学业影响感知"
+  },
+  "risks": {
+    "title": "数字风险",
+    "prevTitle": "风险患病率", "prevSub": "暴露的青少年百分比（综合）",
+    "byAgeTitle": "按年龄的问题性使用", "byAgeSub": "在青春期中期达到峰值（约 13-15 岁）",
+    "note": "数字综合了多个来源的定义（EU Kids Online、WHO-HBSC、INHOPE、荟萃分析）。网络欺凌与问题性使用是最普遍且记录最完善的风险；诱骗与性勒索较少见但影响巨大。"
+  },
+  "family": {
+    "title": "家庭与父母调解", "subtitle": "规则、监督、家长控制与首部手机年龄。",
+    "stratTitle": "父母调解策略", "stratSub": "家庭百分比（综合）",
+    "agesTitle": "给予首部手机的年龄", "agesSub": "各国平均 · 全球约 11 岁",
+    "note": "证据更支持主动调解（陪伴、交流、共同约定规则），而非单纯限制或暗中监控：它能提升数字素养、降低风险，且不损害信任。"
+  },
+  "latam": {
+    "title": "拉丁美洲", "subtitle": "区域聚焦。来源：CEPAL、各国调查、ITU。",
+    "usageTitle": "获取与连接", "usageSub": "青少年/人口百分比",
+    "wellTitle": "福祉指标", "wellSub": "青少年百分比",
+    "tableTitle": "拉美对比表", "tableSub": "秘鲁 · 智利 · 哥伦比亚 · 墨西哥 · 阿根廷 · 巴西",
+    "legendAccess": "智能手机普及", "legendSocial": "社交媒体使用", "legendInternet": "互联网",
+    "legendDepression": "抑郁", "legendCyber": "网络欺凌（受害者）"
+  },
+  "peru": {
+    "title": "秘鲁", "sourcesTitle": "国家来源", "sourcesSub": "深入了解与核实",
+    "studiesTitle": "文献库中的区域/国家研究", "studiesSub": "与秘鲁/拉美相关",
+    "note": "秘鲁智能手机普及率高，但存在连接（城乡）与数字技能的差距。标记为估算的数据在学术工作中引用前应与 INEI、MINSA 和 MINEDU 核对。"
+  },
+  "library": {
+    "title": "科学文献库", "subtitle": "按年份、样本、发现与 DOI/来源索引的研究与报告。",
+    "count": "{{n}} 项研究", "sortedBy": "按年份排序（降序）", "sample": "n", "age": "年龄", "noResults": "未找到结果。",
+    "mod": { "all": "全部", "panorama": "概览", "mental": "心理健康", "education": "教育", "risks": "风险", "latam": "拉美" }
+  },
   "timeline": { "title": "时间线", "subtitle": "技术与青少年行为里程碑，2005 至今。" },
-  "researchers": { "title": "研究者仪表板", "subtitle": "筛选数据集并导出为 CSV 或 JSON。", "count": "{{n}} 个国家" },
+  "researchers": {
+    "title": "研究者仪表板", "subtitle": "筛选数据集并导出为 CSV 或 JSON。",
+    "count": "{{n}} 个国家", "datasetSub": "整合数据集（概览 + 心理健康）",
+    "note": "可用筛选：国家与地区（国家级数据）。按年龄、性别与年份筛选需要逐研究的微观数据——已列入路线图。请始终引用原始来源；estimate 单元格为近似值。"
+  },
   "faq": {
     "title": "常见问题与方法", "subtitle": "如何构建、如何阅读、如何引用。完全透明。",
-    "shareTitle": "分享观测站",
-    "q1": "这些数据是官方的吗？", "q2": "使用智能手机会导致心理健康问题吗？",
-    "q3": "数据来自哪里？", "q4": "如何引用观测站或某项研究？",
-    "q5": "我可以下载数据吗？", "q6": "是否提供其他语言？", "q7": "如何贡献或报告错误？"
+    "shareTitle": "分享观测站", "shareSub": "传播证据",
+    "q1": "这些数据是官方的吗？", "a1": "并非全部。每个指标都有状态：verified（来自具体报告/研究的可引用数据）或 estimate（多来源的合理综合，数量级）。文献库仅收录带 DOI/来源的真实研究。引用前请核对原始来源。",
+    "q2": "使用智能手机会导致心理健康问题吗？", "a2": "证据显示的是关联，而非直接因果。屏幕时间与幸福感之间的平均效应为小到中等（Orben & Przybylski, 2019），并取决于使用类型、情境与既有因素。因此观测站反复强调“相关性 ≠ 因果”。",
+    "q3": "数据来自哪里？", "a3": "Python ETL（build_data.py）整理来自公共来源（UNICEF、WHO/HBSC、OECD/PISA、Pew、Common Sense、DataReportal/ITU、INEI/MINSA/MINEDU）的数据，并生成带状态与来源的 JSON。一个 GitHub Action 每月重新生成并发布。",
+    "q4": "如何引用观测站或某项研究？", "a4": "引用研究请使用其 DOI 与原始来源（文献库中的“DOI →”按钮）。引用平台请注明《青少年智能手机使用全球观测站》（C. Cárdenas）及其网址，并说明 estimate 数据为综合。",
+    "q5": "我可以下载数据吗？", "a5": "可以。研究者模块支持筛选并导出为 CSV 或 JSON。原始 JSON 位于 /data/*.json（如 /data/countries.json）。",
+    "q6": "是否提供其他语言？", "a6": "是的：平台以 10 种最常用语言呈现（英语、中文、印地语、西班牙语、法语、阿拉伯语、孟加拉语、葡萄牙语、俄语、印尼语），并支持阿拉伯语的从右到左。界面已翻译；部分长文本与数据内容在审校完成前可能以英语/西班牙语显示。",
+    "q7": "如何贡献或报告错误？", "a7": "项目在 GitHub 上开放。你可以提交 issue 或 PR，将研究/来源连同其 DOI 添加到 build_data.py。"
   }
 }

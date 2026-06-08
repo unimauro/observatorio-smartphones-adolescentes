@@ -15,32 +15,82 @@
     "noResults": "Sem resultados", "average": "méd.", "share": "Compartilhe o Observatório",
     "shareSub": "Divulgue a evidência", "copy": "Copiar", "copied": "Copiado!", "loading": "Carregando dados…"
   },
-  "badge": { "label": "ⓘ Síntese · ver fontes", "modalTitle": "Sobre os dados", "sources": "Fontes", "dismiss": "Entendi" },
+  "badge": {
+    "label": "ⓘ Síntese · ver fontes", "modalTitle": "Sobre os dados",
+    "states": "Cada indicador tem um status: verified (valor citável de um relatório/estudo) ou estimate (síntese plausível de várias fontes; tome como ordem de grandeza). A Biblioteca reúne os estudos com seu DOI/fonte.",
+    "sources": "Fontes",
+    "correlation": "Correlação ≠ causalidade: as associações entre uso de telas e saúde mental são, em média, pequenas a moderadas e dependem do contexto.",
+    "dismiss": "Entendi"
+  },
   "metric": { "access": "Acesso a smartphone", "hours": "Horas/dia", "age": "Idade do 1º smartphone", "social": "Uso de redes", "internet": "Penetração de internet" },
   "panorama": {
     "title": "Panorama mundial", "subtitle": "Acesso, uso e intensidade de smartphones e internet entre adolescentes, por país.",
     "kpiAccess": "Acesso a smartphone (méd.)", "kpiHours": "Horas de tela/dia (méd.)",
     "kpiAge": "Idade do 1º smartphone (méd.)", "kpiSocial": "Uso de redes (méd.)",
-    "indicatorLabel": "Indicador do mapa:", "mapTitle": "Mapa interativo", "rankingTitle": "Ranking de países — {{metric}}"
+    "indicatorLabel": "Indicador do mapa:", "mapTitle": "Mapa interativo",
+    "mapSubtitle": "Tamanho e cor ∝ valor do indicador · clique em um país para detalhes",
+    "rankingTitle": "Ranking de países — {{metric}}", "rankingSub": "Top 14"
   },
   "mental": {
     "title": "Saúde mental", "subtitle": "Prevalências autorrelatadas e sua relação com o tempo de tela.",
     "kpiAnxiety": "Ansiedade (méd.)", "kpiDepression": "Depressão (méd.)", "kpiCyber": "Cyberbullying vítima (méd.)", "kpiSleep": "Problemas de sono (méd.)",
-    "byCountry": "Indicadores de saúde mental por país", "corrTitle": "Correlação: tempo de tela ↔ sintomas depressivos"
+    "byCountry": "Indicadores de saúde mental por país", "byCountrySub": "% de adolescentes (autorrelato, síntese)",
+    "corrTitle": "Correlação: tempo de tela ↔ sintomas depressivos",
+    "corrWarning": "⚠ Associação ≠ causalidade. O efeito médio relatado na literatura é pequeno a moderado e depende do contexto, do tipo de uso e de fatores prévios.",
+    "dim": { "anxiety": "Ansiedade", "depression": "Depressão", "loneliness": "Solidão", "cyber": "Cyberbullying", "sleep": "Sono ruim" }
   },
-  "education": { "title": "Educação", "useVsDistract": "Uso educativo vs. distração", "skillsVsPerf": "Competências digitais e percepção acadêmica" },
-  "risks": { "title": "Riscos digitais", "prevTitle": "Prevalência de riscos", "byAgeTitle": "Uso problemático por idade" },
-  "family": { "title": "Família e mediação parental", "subtitle": "Regras, supervisão, controle parental e idade do primeiro smartphone.", "stratTitle": "Estratégias de mediação parental", "agesTitle": "Idade de entrega do primeiro smartphone" },
-  "latam": { "title": "América Latina", "subtitle": "Foco regional. Fontes: CEPAL, pesquisas nacionais, ITU.", "usageTitle": "Acesso e conectividade", "wellTitle": "Indicadores de bem-estar", "tableTitle": "Tabela comparativa LATAM" },
-  "peru": { "title": "Peru", "sourcesTitle": "Fontes nacionais", "studiesTitle": "Estudos regionais/nacionais na biblioteca" },
-  "library": { "title": "Biblioteca científica", "subtitle": "Estudos e relatórios indexados por ano, amostra, achados e DOI/fonte.", "count": "{{n}} estudo(s)", "mod": { "all": "Todos" } },
+  "education": {
+    "title": "Educação",
+    "note": "O smartphone é ferramenta e distração ao mesmo tempo: usado pedagogicamente melhora o acesso ao conhecimento, mas o uso recreativo em aula associa-se a menor desempenho (OECD/PISA 2022). A chave é o desenho do uso, não apenas o dispositivo.",
+    "useVsDistract": "Uso educativo vs. distração", "useVsDistractSub": "% de adolescentes por país",
+    "skillsVsPerf": "Competências digitais e percepção acadêmica", "skillsVsPerfSub": "Percepção negativa = impacto adverso relatado",
+    "legendUse": "Uso educativo", "legendDistract": "Distração em aula", "legendSkills": "Competências digitais", "legendPerf": "Percepção do impacto acadêmico"
+  },
+  "risks": {
+    "title": "Riscos digitais",
+    "prevTitle": "Prevalência de riscos", "prevSub": "% de adolescentes expostos (síntese)",
+    "byAgeTitle": "Uso problemático por idade", "byAgeSub": "Pico na adolescência média (~13-15 anos)",
+    "note": "Os números combinam definições de várias fontes (EU Kids Online, WHO-HBSC, INHOPE, meta-análises). Cyberbullying e uso problemático são os riscos mais prevalentes e mais bem documentados; aliciamento e sextorsão são menos frequentes, mas de alto impacto."
+  },
+  "family": {
+    "title": "Família e mediação parental", "subtitle": "Regras, supervisão, controle parental e idade do primeiro smartphone.",
+    "stratTitle": "Estratégias de mediação parental", "stratSub": "% de lares (síntese)",
+    "agesTitle": "Idade de entrega do primeiro smartphone", "agesSub": "Média por país · global ≈ 11 anos",
+    "note": "A evidência favorece a mediação ativa (acompanhar, conversar, acordar regras) sobre a restrição pura ou a vigilância oculta: melhora a alfabetização digital e reduz riscos sem prejudicar a confiança."
+  },
+  "latam": {
+    "title": "América Latina", "subtitle": "Foco regional. Fontes: CEPAL, pesquisas nacionais, ITU.",
+    "usageTitle": "Acesso e conectividade", "usageSub": "% de adolescentes / população",
+    "wellTitle": "Indicadores de bem-estar", "wellSub": "% de adolescentes",
+    "tableTitle": "Tabela comparativa LATAM", "tableSub": "Peru · Chile · Colômbia · México · Argentina · Brasil",
+    "legendAccess": "Acesso a smartphone", "legendSocial": "Uso de redes", "legendInternet": "Internet",
+    "legendDepression": "Depressão", "legendCyber": "Cyberbullying (vítima)"
+  },
+  "peru": {
+    "title": "Peru", "sourcesTitle": "Fontes nacionais", "sourcesSub": "Para aprofundar e verificar",
+    "studiesTitle": "Estudos regionais/nacionais na biblioteca", "studiesSub": "Relacionados ao Peru/LATAM",
+    "note": "O Peru combina alta adoção de smartphones com lacunas de conectividade (urbano/rural) e de competências digitais. Os valores marcados como estimados devem ser confrontados com INEI, MINSA e MINEDU antes de citar em trabalhos acadêmicos."
+  },
+  "library": {
+    "title": "Biblioteca científica", "subtitle": "Estudos e relatórios indexados por ano, amostra, achados e DOI/fonte.",
+    "count": "{{n}} estudo(s)", "sortedBy": "Ordenados por ano (desc.)", "sample": "n", "age": "idade", "noResults": "Sem resultados para essa busca.",
+    "mod": { "all": "Todos", "panorama": "Panorama", "mental": "Saúde mental", "education": "Educação", "risks": "Riscos", "latam": "LATAM" }
+  },
   "timeline": { "title": "Linha do tempo", "subtitle": "Marcos tecnológicos e de comportamento adolescente, 2005–presente." },
-  "researchers": { "title": "Painel para pesquisadores", "subtitle": "Filtre o conjunto de dados e exporte em CSV ou JSON.", "count": "{{n}} país(es)" },
+  "researchers": {
+    "title": "Painel para pesquisadores", "subtitle": "Filtre o conjunto de dados e exporte em CSV ou JSON para sua análise.",
+    "count": "{{n}} país(es)", "datasetSub": "Conjunto de dados consolidado (panorama + saúde mental)",
+    "note": "Filtros disponíveis: país e região (dados em nível de país). A filtragem por idade, gênero e ano requer microdados por estudo — está no roadmap. Cite sempre a fonte original; as células estimate são aproximações."
+  },
   "faq": {
     "title": "Perguntas frequentes e metodologia", "subtitle": "Como é construído, como ler e como citar. Transparência total.",
-    "shareTitle": "Compartilhe o Observatório",
-    "q1": "Estes dados são oficiais?", "q2": "O uso de smartphones causa problemas de saúde mental?",
-    "q3": "De onde vêm os dados?", "q4": "Como cito o Observatório ou um estudo?",
-    "q5": "Posso baixar os dados?", "q6": "Está disponível em outros idiomas?", "q7": "Como contribuo ou reporto um erro?"
+    "shareTitle": "Compartilhe o Observatório", "shareSub": "Divulgue a evidência",
+    "q1": "Estes dados são oficiais?", "a1": "Nem todos. Cada indicador tem um status: verified (valor citável de um relatório/estudo concreto) ou estimate (síntese plausível de várias fontes, ordem de grandeza). A Biblioteca contém apenas estudos reais com seu DOI/fonte. Antes de citar, verifique na fonte original.",
+    "q2": "O uso de smartphones causa problemas de saúde mental?", "a2": "A evidência mostra associações, não causalidade direta. O efeito médio entre tempo de tela e bem-estar é pequeno a moderado (Orben & Przybylski, 2019) e depende do tipo de uso, do contexto e de fatores prévios. Por isso o Observatório repete o selo “correlação ≠ causalidade”.",
+    "q3": "De onde vêm os dados?", "a3": "Um ETL em Python (build_data.py) cura valores de fontes públicas (UNICEF, WHO/HBSC, OECD/PISA, Pew, Common Sense, DataReportal/ITU, INEI/MINSA/MINEDU) e gera JSON com status e fonte. Uma GitHub Action os regenera e publica mensalmente.",
+    "q4": "Como cito o Observatório ou um estudo?", "a4": "Para um estudo, use seu DOI e a fonte original (botão “DOI →” na Biblioteca). Para a plataforma, cite o Observatório Global do Uso de Smartphones em Adolescentes (C. Cárdenas) e sua URL. Indique que os valores estimate são sínteses.",
+    "q5": "Posso baixar os dados?", "a5": "Sim. O módulo Pesquisadores permite filtrar e exportar em CSV ou JSON. Os JSON brutos estão em /data/*.json (ex.: /data/countries.json).",
+    "q6": "Está disponível em outros idiomas?", "a6": "Sim: a plataforma é apresentada nos 10 idiomas mais usados (inglês, chinês, hindi, espanhol, francês, árabe, bengali, português, russo, indonésio), com suporte RTL para o árabe. A interface está traduzida; alguns textos longos e o conteúdo dos dados podem aparecer em inglês/espanhol enquanto a revisão é concluída.",
+    "q7": "Como contribuo ou reporto um erro?", "a7": "O projeto é aberto no GitHub. Você pode abrir uma issue ou um PR adicionando estudos/fontes ao build_data.py com seu DOI."
   }
 }
