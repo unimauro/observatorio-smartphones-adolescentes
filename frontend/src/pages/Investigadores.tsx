@@ -1,7 +1,9 @@
 import { useMemo, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { useData } from "../lib/store";
 import PageState from "../components/PageState";
 import ChartCard from "../components/ChartCard";
+import { localizeCountry } from "../lib/geo";
 
 export default function Investigadores() {
   return <PageState><Content /></PageState>;
@@ -9,6 +11,8 @@ export default function Investigadores() {
 
 function Content() {
   const { countries, mental } = useData();
+  const { t, i18n } = useTranslation();
+  const lng = (i18n.resolvedLanguage || "es").slice(0, 2);
   const [region, setRegion] = useState("");
   const [q, setQ] = useState("");
 
@@ -19,15 +23,10 @@ function Content() {
     .filter((c) => (!region || c.region === region) && (!q || c.country.toLowerCase().includes(q.toLowerCase())))
     .map((c) => ({
       pais: c.country, region: c.region, iso3: c.iso3,
-      acceso_smartphone_pct: c.smartphone_access_pct,
-      edad_primer_smartphone: c.first_phone_age,
-      horas_dia: c.daily_hours,
-      uso_redes_pct: c.social_media_pct,
-      internet_pct: c.internet_penetration_pct,
-      depresion_pct: mmap[c.country]?.depression_pct ?? "",
-      ansiedad_pct: mmap[c.country]?.anxiety_pct ?? "",
-      ciberacoso_pct: mmap[c.country]?.cyberbullying_victim_pct ?? "",
-      estado: c.status,
+      acceso_smartphone_pct: c.smartphone_access_pct, edad_primer_smartphone: c.first_phone_age,
+      horas_dia: c.daily_hours, uso_redes_pct: c.social_media_pct, internet_pct: c.internet_penetration_pct,
+      depresion_pct: mmap[c.country]?.depression_pct ?? "", ansiedad_pct: mmap[c.country]?.anxiety_pct ?? "",
+      ciberacoso_pct: mmap[c.country]?.cyberbullying_victim_pct ?? "", estado: c.status,
     })), [countries, mmap, region, q]);
 
   const download = (content: string, filename: string, type: string) => {
@@ -48,17 +47,17 @@ function Content() {
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-xl font-bold text-slate-100">Dashboard para investigadores</h1>
-        <p className="text-sm text-slate-500">Filtra el dataset y expórtalo en CSV o JSON para tu análisis.</p>
+        <h1 className="text-xl font-bold text-slate-100">{t("researchers.title")}</h1>
+        <p className="text-sm text-slate-500">{t("researchers.subtitle")}</p>
       </div>
 
       <div className="flex flex-wrap items-center gap-2">
-        <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="Buscar país…"
+        <input value={q} onChange={(e) => setQ(e.target.value)} placeholder={t("common.searchCountry")}
           className="bg-ink-800 border border-ink-600 rounded-md px-3 py-2 text-sm text-slate-200 placeholder:text-slate-600 focus:outline-none focus:border-brand-teal/60" />
         {regions.map((r) => (
           <button key={r || "all"} onClick={() => setRegion(r)}
             className={`text-xs px-2.5 py-1.5 rounded border ${region === r ? "border-brand-teal/60 text-brand-teal bg-brand-teal/10" : "border-ink-600 text-slate-400"}`}>
-            {r || "Todas las regiones"}
+            {r || t("common.allRegions")}
           </button>
         ))}
         <div className="ml-auto flex gap-2">
@@ -67,20 +66,20 @@ function Content() {
         </div>
       </div>
 
-      <ChartCard title={`${merged.length} país(es)`} subtitle="Dataset consolidado (panorama + salud mental)">
+      <ChartCard title={t("researchers.count", { n: merged.length })} subtitle={t("researchers.datasetSub")}>
         <div className="overflow-x-auto">
           <table className="w-full text-xs tabular">
             <thead>
               <tr className="text-slate-500 border-b border-ink-600 text-left">
-                {["País", "Región", "Acceso%", "1er móvil", "h/día", "Redes%", "Internet%", "Depresión%", "Ansiedad%", "Ciberacoso%", "Estado"].map((h) => (
-                  <th key={h} className="py-2 px-2 whitespace-nowrap">{h}</th>
+                {[t("common.country"), t("common.region"), t("metric.access"), t("metric.age"), t("metric.hours"), t("metric.social"), t("metric.internet"), t("mental.dim.depression"), t("mental.dim.anxiety"), t("mental.dim.cyber")].map((h, i) => (
+                  <th key={i} className="py-2 px-2 whitespace-nowrap">{h}</th>
                 ))}
               </tr>
             </thead>
             <tbody>
               {merged.map((r) => (
                 <tr key={r.iso3} className="border-b border-ink-700/50 hover:bg-ink-700/40 text-slate-300">
-                  <td className="py-1.5 px-2 text-slate-100 font-medium whitespace-nowrap">{r.pais}</td>
+                  <td className="py-1.5 px-2 text-slate-100 font-medium whitespace-nowrap">{localizeCountry(r.pais, lng)}</td>
                   <td className="px-2 whitespace-nowrap">{r.region}</td>
                   <td className="px-2">{r.acceso_smartphone_pct}</td>
                   <td className="px-2">{r.edad_primer_smartphone}</td>
@@ -90,7 +89,6 @@ function Content() {
                   <td className="px-2">{String(r.depresion_pct)}</td>
                   <td className="px-2">{String(r.ansiedad_pct)}</td>
                   <td className="px-2">{String(r.ciberacoso_pct)}</td>
-                  <td className="px-2"><span className={r.estado === "verified" ? "text-brand-green" : "text-brand-amber"}>{r.estado}</span></td>
                 </tr>
               ))}
             </tbody>
@@ -98,11 +96,7 @@ function Content() {
         </div>
       </ChartCard>
 
-      <div className="card text-xs text-slate-500">
-        Filtros disponibles: país y región (datos a nivel país). El filtrado por <strong>edad, género y año</strong>
-        requiere microdatos por estudio — está en el roadmap (integrar PISA/HBSC/ENAHO a nivel registro). Cita siempre
-        la fuente original; las celdas <span className="text-brand-amber">estimate</span> son aproximaciones.
-      </div>
+      <div className="card text-xs text-slate-500">{t("researchers.note")}</div>
     </div>
   );
 }

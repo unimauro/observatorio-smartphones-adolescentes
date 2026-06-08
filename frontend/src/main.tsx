@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import "leaflet/dist/leaflet.css";
 import "./index.css";
+import "./lib/i18n";
 import { DataProvider } from "./lib/store";
 import Layout from "./components/Layout";
 import Panorama from "./pages/Panorama";

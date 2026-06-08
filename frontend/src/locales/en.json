@@ -1,0 +1,106 @@
+{
+  "app": { "brand": "Observatory", "tagline": "Teens & Screens", "stats": "{{countries}} countries · {{studies}} studies" },
+  "header": { "subtitle": "Smartphone, social media and internet use among adolescents · global evidence" },
+  "footer": { "platform": "Research platform · non-profit", "by": "By" },
+  "theme": { "day": "Day", "night": "Night" },
+  "lang": { "label": "Language" },
+  "nav": {
+    "panorama": "World Overview", "mental": "Mental Health", "education": "Education",
+    "risks": "Digital Risks", "family": "Family", "latam": "LATAM", "peru": "Peru",
+    "library": "Library", "timeline": "Timeline", "researchers": "Researchers", "faq": "FAQ / Methodology"
+  },
+  "common": {
+    "search": "Search…", "searchCountry": "Search country…", "country": "Country", "region": "Region",
+    "allRegions": "All regions", "verified": "verified", "estimate": "estimate",
+    "noResults": "No results", "average": "avg.", "share": "Share the Observatory",
+    "shareSub": "Spread the evidence", "copy": "Copy", "copied": "Copied!", "loading": "Loading data…"
+  },
+  "badge": {
+    "label": "ⓘ Synthesis · view sources", "modalTitle": "About the data",
+    "states": "Each indicator has a status: verified (a citable figure from a report/study) or estimate (a plausible synthesis of several sources; treat as an order of magnitude). The Library collects studies with their DOI/source.",
+    "sources": "Sources",
+    "correlation": "Correlation ≠ causation: associations between screen use and mental health are, on average, small-to-moderate and context-dependent.",
+    "dismiss": "Got it"
+  },
+  "metric": { "access": "Smartphone access", "hours": "Hours/day", "age": "Age of first smartphone", "social": "Social media use", "internet": "Internet penetration" },
+  "panorama": {
+    "title": "World overview",
+    "subtitle": "Access, use and intensity of smartphones and internet among adolescents, by country.",
+    "kpiAccess": "Smartphone access (avg.)", "kpiHours": "Screen hours/day (avg.)",
+    "kpiAge": "Age of first smartphone (avg.)", "kpiSocial": "Social media use (avg.)",
+    "indicatorLabel": "Map indicator:", "mapTitle": "Interactive map",
+    "mapSubtitle": "Size and color ∝ indicator value · click a country for details",
+    "rankingTitle": "Country ranking — {{metric}}", "rankingSub": "Top 14"
+  },
+  "mental": {
+    "title": "Mental health",
+    "subtitle": "Self-reported prevalence and its relationship with screen time.",
+    "kpiAnxiety": "Anxiety (avg.)", "kpiDepression": "Depression (avg.)",
+    "kpiCyber": "Cyberbullying victim (avg.)", "kpiSleep": "Sleep problems (avg.)",
+    "byCountry": "Mental health indicators by country", "byCountrySub": "% of adolescents (self-report, synthesis)",
+    "corrTitle": "Correlation: screen time ↔ depressive symptoms",
+    "corrWarning": "⚠ Association ≠ causation. The average effect reported in the literature is small-to-moderate and depends on context, type of use and prior factors.",
+    "dim": { "anxiety": "Anxiety", "depression": "Depression", "loneliness": "Loneliness", "cyber": "Cyberbullying", "sleep": "Poor sleep" }
+  },
+  "education": {
+    "title": "Education",
+    "note": "The smartphone is both a tool and a distraction: used pedagogically it improves access to knowledge, but recreational use in class is associated with lower performance (OECD/PISA 2022). The key is the design of use, not just the device.",
+    "useVsDistract": "Educational use vs. distraction", "useVsDistractSub": "% of adolescents by country",
+    "skillsVsPerf": "Digital skills and academic perception", "skillsVsPerfSub": "Negative perception = reported adverse impact",
+    "legendUse": "Educational use", "legendDistract": "Classroom distraction", "legendSkills": "Digital skills", "legendPerf": "Academic impact perception"
+  },
+  "risks": {
+    "title": "Digital risks",
+    "prevTitle": "Risk prevalence", "prevSub": "% of adolescents exposed (synthesis)",
+    "byAgeTitle": "Problematic use by age", "byAgeSub": "Peak in mid-adolescence (~13-15 years)",
+    "note": "Figures combine definitions from several sources (EU Kids Online, WHO-HBSC, INHOPE, meta-analyses). Cyberbullying and problematic use are the most prevalent and best-documented risks; grooming and sextortion are less frequent but high-impact."
+  },
+  "family": {
+    "title": "Family and parental mediation",
+    "subtitle": "Rules, supervision, parental controls and age of giving the first smartphone.",
+    "stratTitle": "Parental mediation strategies", "stratSub": "% of households (synthesis)",
+    "agesTitle": "Age of giving the first smartphone", "agesSub": "Average by country · global ≈ 11 years",
+    "note": "Evidence favors active mediation (accompanying, talking, agreeing on rules) over pure restriction or covert surveillance: it improves digital literacy and reduces risks without harming trust."
+  },
+  "latam": {
+    "title": "Latin America",
+    "subtitle": "Regional focus. Sources: CEPAL, national surveys, ITU.",
+    "usageTitle": "Access and connectivity", "usageSub": "% of adolescents / population",
+    "wellTitle": "Wellbeing indicators", "wellSub": "% of adolescents",
+    "tableTitle": "LATAM comparison table", "tableSub": "Peru · Chile · Colombia · Mexico · Argentina · Brazil",
+    "legendAccess": "Smartphone access", "legendSocial": "Social media use", "legendInternet": "Internet",
+    "legendDepression": "Depression", "legendCyber": "Cyberbullying (victim)"
+  },
+  "peru": {
+    "title": "Peru",
+    "sourcesTitle": "National sources", "sourcesSub": "To go deeper and verify",
+    "studiesTitle": "Regional/national studies in the library", "studiesSub": "Related to Peru/LATAM",
+    "note": "Peru combines high smartphone adoption with connectivity gaps (urban/rural) and digital-skills gaps. Figures marked as estimate should be checked against INEI, MINSA and MINEDU before citing in academic work."
+  },
+  "library": {
+    "title": "Scientific library",
+    "subtitle": "Studies and reports indexed by year, sample, findings and DOI/source.",
+    "count": "{{n}} study(ies)", "sortedBy": "Sorted by year (desc.)",
+    "sample": "n", "age": "age", "noResults": "No results for that search.",
+    "mod": { "all": "All", "panorama": "Overview", "mental": "Mental health", "education": "Education", "risks": "Risks", "latam": "LATAM" }
+  },
+  "timeline": { "title": "Timeline", "subtitle": "Technological and adolescent-behavior milestones, 2005–present." },
+  "researchers": {
+    "title": "Researcher dashboard",
+    "subtitle": "Filter the dataset and export it as CSV or JSON for your analysis.",
+    "count": "{{n}} country(ies)", "datasetSub": "Consolidated dataset (overview + mental health)",
+    "note": "Available filters: country and region (country-level data). Filtering by age, gender and year requires per-study microdata — it is on the roadmap. Always cite the original source; estimate cells are approximations."
+  },
+  "faq": {
+    "title": "Frequently asked questions and methodology",
+    "subtitle": "How it is built, how to read it and how to cite it. Full transparency.",
+    "shareTitle": "Share the Observatory", "shareSub": "Spread the evidence",
+    "q1": "Is this data official?", "a1": "Not all of it. Each indicator has a status: verified (a citable figure from a specific report/study) or estimate (a plausible synthesis of several sources, order of magnitude). The Library only contains real studies with their DOI/source. Before citing, verify in the original source.",
+    "q2": "Does smartphone use cause mental health problems?", "a2": "The evidence shows associations, not direct causation. The average effect between screen time and wellbeing is small-to-moderate (Orben & Przybylski, 2019) and depends on the type of use, context and prior factors. That is why the Observatory repeats the “correlation ≠ causation” seal.",
+    "q3": "Where does the data come from?", "a3": "A Python ETL (build_data.py) curates figures from public sources (UNICEF, WHO/HBSC, OECD/PISA, Pew, Common Sense, DataReportal/ITU, INEI/MINSA/MINEDU) and outputs JSON with status and source. A GitHub Action regenerates and publishes them monthly.",
+    "q4": "How do I cite the Observatory or a study?", "a4": "For a study, use its DOI and the original source (“DOI →” button in the Library). For the platform, cite the Global Observatory of Smartphone Use among Adolescents (C. Cárdenas) and its URL. Note that estimate figures are syntheses.",
+    "q5": "Can I download the data?", "a5": "Yes. The Researchers module lets you filter and export as CSV or JSON. Raw JSON is at /data/*.json (e.g. /data/countries.json).",
+    "q6": "Is it available in other languages?", "a6": "Yes: the platform is presented in the 10 most-used languages (English, Chinese, Hindi, Spanish, French, Arabic, Bengali, Portuguese, Russian, Indonesian), with RTL support for Arabic. The interface is translated; some long texts and the data content may appear in English/Spanish while review is completed.",
+    "q7": "How do I contribute or report an error?", "a7": "The project is open on GitHub. You can open an issue or a PR adding studies/sources to build_data.py with their DOI."
+  }
+}

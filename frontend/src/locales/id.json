@@ -1,0 +1,46 @@
+{
+  "app": { "brand": "Observatorium", "tagline": "Remaja & Layar", "stats": "{{countries}} negara · {{studies}} studi" },
+  "header": { "subtitle": "Penggunaan ponsel pintar, media sosial, dan internet pada remaja · bukti global" },
+  "footer": { "platform": "Platform riset · nirlaba", "by": "Oleh" },
+  "theme": { "day": "Siang", "night": "Malam" },
+  "lang": { "label": "Bahasa" },
+  "nav": {
+    "panorama": "Panorama Dunia", "mental": "Kesehatan Mental", "education": "Pendidikan",
+    "risks": "Risiko Digital", "family": "Keluarga", "latam": "Amerika Latin", "peru": "Peru",
+    "library": "Perpustakaan", "timeline": "Garis Waktu", "researchers": "Peneliti", "faq": "FAQ / Metodologi"
+  },
+  "common": {
+    "search": "Cari…", "searchCountry": "Cari negara…", "country": "Negara", "region": "Kawasan",
+    "allRegions": "Semua kawasan", "verified": "terverifikasi", "estimate": "perkiraan",
+    "noResults": "Tidak ada hasil", "average": "rata2", "share": "Bagikan Observatorium",
+    "shareSub": "Sebarkan bukti", "copy": "Salin", "copied": "Tersalin!", "loading": "Memuat data…"
+  },
+  "badge": { "label": "ⓘ Sintesis · lihat sumber", "modalTitle": "Tentang data", "sources": "Sumber", "dismiss": "Mengerti" },
+  "metric": { "access": "Akses ponsel pintar", "hours": "Jam/hari", "age": "Usia ponsel pertama", "social": "Penggunaan media sosial", "internet": "Penetrasi internet" },
+  "panorama": {
+    "title": "Panorama dunia", "subtitle": "Akses, penggunaan, dan intensitas ponsel pintar dan internet pada remaja, per negara.",
+    "kpiAccess": "Akses ponsel pintar (rata2)", "kpiHours": "Jam layar/hari (rata2)",
+    "kpiAge": "Usia ponsel pertama (rata2)", "kpiSocial": "Penggunaan media sosial (rata2)",
+    "indicatorLabel": "Indikator peta:", "mapTitle": "Peta interaktif", "rankingTitle": "Peringkat negara — {{metric}}"
+  },
+  "mental": {
+    "title": "Kesehatan mental", "subtitle": "Prevalensi yang dilaporkan sendiri dan hubungannya dengan waktu layar.",
+    "kpiAnxiety": "Kecemasan (rata2)", "kpiDepression": "Depresi (rata2)", "kpiCyber": "Korban perundungan siber (rata2)", "kpiSleep": "Masalah tidur (rata2)",
+    "byCountry": "Indikator kesehatan mental per negara", "corrTitle": "Korelasi: waktu layar ↔ gejala depresi"
+  },
+  "education": { "title": "Pendidikan", "useVsDistract": "Penggunaan edukatif vs. gangguan", "skillsVsPerf": "Keterampilan digital dan persepsi akademik" },
+  "risks": { "title": "Risiko digital", "prevTitle": "Prevalensi risiko", "byAgeTitle": "Penggunaan bermasalah menurut usia" },
+  "family": { "title": "Keluarga dan mediasi orang tua", "subtitle": "Aturan, pengawasan, kontrol orang tua, dan usia ponsel pertama.", "stratTitle": "Strategi mediasi orang tua", "agesTitle": "Usia pemberian ponsel pertama" },
+  "latam": { "title": "Amerika Latin", "subtitle": "Fokus kawasan. Sumber: CEPAL, survei nasional, ITU.", "usageTitle": "Akses dan konektivitas", "wellTitle": "Indikator kesejahteraan", "tableTitle": "Tabel perbandingan Amerika Latin" },
+  "peru": { "title": "Peru", "sourcesTitle": "Sumber nasional", "studiesTitle": "Studi regional/nasional di perpustakaan" },
+  "library": { "title": "Perpustakaan ilmiah", "subtitle": "Studi terindeks menurut tahun, sampel, temuan, dan DOI/sumber.", "count": "{{n}} studi", "mod": { "all": "Semua" } },
+  "timeline": { "title": "Garis waktu", "subtitle": "Tonggak teknologi dan perilaku remaja, 2005–sekarang." },
+  "researchers": { "title": "Dasbor peneliti", "subtitle": "Saring dataset dan ekspor sebagai CSV atau JSON.", "count": "{{n}} negara" },
+  "faq": {
+    "title": "Pertanyaan umum dan metodologi", "subtitle": "Cara dibangun, cara membaca, dan cara mengutip. Transparansi penuh.",
+    "shareTitle": "Bagikan Observatorium",
+    "q1": "Apakah data ini resmi?", "q2": "Apakah penggunaan ponsel menyebabkan masalah kesehatan mental?",
+    "q3": "Dari mana data berasal?", "q4": "Bagaimana mengutip Observatorium atau studi?",
+    "q5": "Bisakah saya mengunduh data?", "q6": "Apakah tersedia dalam bahasa lain?", "q7": "Bagaimana saya berkontribusi atau melaporkan kesalahan?"
+  }
+}

@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { useData } from "../lib/store";
 import PageState from "../components/PageState";
 import ChartCard from "../components/ChartCard";
@@ -10,13 +11,14 @@ export default function Peru() {
 
 function Content() {
   const { peru, studies } = useData();
+  const { t } = useTranslation();
   if (!peru) return null;
   const peruStudies = studies?.rows.filter((s) => /per[uú]|latam/i.test(s.country)) ?? [];
 
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-xl font-bold text-slate-100">🇵🇪 Perú</h1>
+        <h1 className="text-xl font-bold text-slate-100">🇵🇪 {t("peru.title")}</h1>
         <p className="text-sm text-slate-500 max-w-3xl">{peru.note}</p>
       </div>
 
@@ -24,12 +26,12 @@ function Content() {
         {peru.indicators.map((ind) => (
           <KpiCard key={ind.metric} label={ind.metric}
             value={ind.metric.includes("Edad") || ind.metric.includes("Horas") ? num(ind.value_pct, 1) : `${num(ind.value_pct, 0)}%`}
-            sub={`${ind.source} · ${ind.status === "verified" ? "verificado" : "estimado"}`}
+            sub={`${ind.source} · ${ind.status === "verified" ? t("common.verified") : t("common.estimate")}`}
             tone={ind.status === "verified" ? "good" : "warn"} />
         ))}
       </div>
 
-      <ChartCard title="Fuentes nacionales" subtitle="Para profundizar y verificar">
+      <ChartCard title={t("peru.sourcesTitle")} subtitle={t("peru.sourcesSub")}>
         <ul className="text-sm space-y-2">
           {peru.sources.map((s) => (
             <li key={s.url} className="flex items-center gap-2">
@@ -41,7 +43,7 @@ function Content() {
       </ChartCard>
 
       {peruStudies.length > 0 && (
-        <ChartCard title="Estudios regionales/nacionales en la biblioteca" subtitle="Relacionados con Perú/LATAM">
+        <ChartCard title={t("peru.studiesTitle")} subtitle={t("peru.studiesSub")}>
           <ul className="text-sm space-y-2">
             {peruStudies.map((s) => (
               <li key={s.id} className="text-slate-300">
@@ -52,11 +54,7 @@ function Content() {
         </ChartCard>
       )}
 
-      <div className="card text-sm text-slate-400">
-        <strong className="text-brand-amber">Nota:</strong> Perú combina alta adopción de smartphones con brechas de
-        conectividad (urbano/rural) y de habilidades digitales. Las cifras marcadas como <em>estimadas</em> deben
-        contrastarse con INEI, MINSA y MINEDU antes de citarse en trabajos académicos.
-      </div>
+      <div className="card text-sm text-slate-400">{t("peru.note")}</div>
     </div>
   );
 }

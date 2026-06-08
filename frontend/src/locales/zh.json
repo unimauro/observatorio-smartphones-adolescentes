@@ -1,0 +1,46 @@
+{
+  "app": { "brand": "观测站", "tagline": "青少年与屏幕", "stats": "{{countries}} 个国家 · {{studies}} 项研究" },
+  "header": { "subtitle": "青少年的智能手机、社交媒体与互联网使用 · 全球证据" },
+  "footer": { "platform": "研究平台 · 非营利", "by": "作者" },
+  "theme": { "day": "日间", "night": "夜间" },
+  "lang": { "label": "语言" },
+  "nav": {
+    "panorama": "全球概览", "mental": "心理健康", "education": "教育",
+    "risks": "数字风险", "family": "家庭", "latam": "拉美", "peru": "秘鲁",
+    "library": "文献库", "timeline": "时间线", "researchers": "研究者", "faq": "常见问题 / 方法"
+  },
+  "common": {
+    "search": "搜索…", "searchCountry": "搜索国家…", "country": "国家", "region": "地区",
+    "allRegions": "所有地区", "verified": "已核实", "estimate": "估算",
+    "noResults": "无结果", "average": "平均", "share": "分享观测站",
+    "shareSub": "传播证据", "copy": "复制", "copied": "已复制！", "loading": "正在加载数据…"
+  },
+  "badge": { "label": "ⓘ 综合 · 查看来源", "modalTitle": "关于数据", "sources": "来源", "dismiss": "明白了" },
+  "metric": { "access": "智能手机普及", "hours": "每日小时数", "age": "首部手机年龄", "social": "社交媒体使用", "internet": "互联网普及" },
+  "panorama": {
+    "title": "全球概览", "subtitle": "各国青少年智能手机和互联网的获取、使用与强度。",
+    "kpiAccess": "智能手机普及（平均）", "kpiHours": "每日屏幕小时数（平均）",
+    "kpiAge": "首部手机年龄（平均）", "kpiSocial": "社交媒体使用（平均）",
+    "indicatorLabel": "地图指标：", "mapTitle": "交互式地图", "rankingTitle": "国家排名 — {{metric}}"
+  },
+  "mental": {
+    "title": "心理健康", "subtitle": "自我报告的患病率及其与屏幕时间的关系。",
+    "kpiAnxiety": "焦虑（平均）", "kpiDepression": "抑郁（平均）", "kpiCyber": "网络欺凌受害者（平均）", "kpiSleep": "睡眠问题（平均）",
+    "byCountry": "各国心理健康指标", "corrTitle": "相关性：屏幕时间 ↔ 抑郁症状"
+  },
+  "education": { "title": "教育", "useVsDistract": "教育用途 vs. 分心", "skillsVsPerf": "数字技能与学业感知" },
+  "risks": { "title": "数字风险", "prevTitle": "风险患病率", "byAgeTitle": "按年龄的问题性使用" },
+  "family": { "title": "家庭与父母调解", "subtitle": "规则、监督、家长控制与首部手机年龄。", "stratTitle": "父母调解策略", "agesTitle": "给予首部手机的年龄" },
+  "latam": { "title": "拉丁美洲", "subtitle": "区域聚焦。来源：CEPAL、各国调查、ITU。", "usageTitle": "获取与连接", "wellTitle": "福祉指标", "tableTitle": "拉美对比表" },
+  "peru": { "title": "秘鲁", "sourcesTitle": "国家来源", "studiesTitle": "文献库中的区域/国家研究" },
+  "library": { "title": "科学文献库", "subtitle": "按年份、样本、发现与 DOI/来源索引的研究与报告。", "count": "{{n}} 项研究", "mod": { "all": "全部" } },
+  "timeline": { "title": "时间线", "subtitle": "技术与青少年行为里程碑，2005 至今。" },
+  "researchers": { "title": "研究者仪表板", "subtitle": "筛选数据集并导出为 CSV 或 JSON。", "count": "{{n}} 个国家" },
+  "faq": {
+    "title": "常见问题与方法", "subtitle": "如何构建、如何阅读、如何引用。完全透明。",
+    "shareTitle": "分享观测站",
+    "q1": "这些数据是官方的吗？", "q2": "使用智能手机会导致心理健康问题吗？",
+    "q3": "数据来自哪里？", "q4": "如何引用观测站或某项研究？",
+    "q5": "我可以下载数据吗？", "q6": "是否提供其他语言？", "q7": "如何贡献或报告错误？"
+  }
+}

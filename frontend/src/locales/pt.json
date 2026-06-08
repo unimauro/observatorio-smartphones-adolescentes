@@ -1,0 +1,46 @@
+{
+  "app": { "brand": "Observatório", "tagline": "Adolescentes & Telas", "stats": "{{countries}} países · {{studies}} estudos" },
+  "header": { "subtitle": "Uso de smartphones, redes sociais e internet em adolescentes · evidência global" },
+  "footer": { "platform": "Plataforma de pesquisa · sem fins lucrativos", "by": "Por" },
+  "theme": { "day": "Dia", "night": "Noite" },
+  "lang": { "label": "Idioma" },
+  "nav": {
+    "panorama": "Panorama Mundial", "mental": "Saúde Mental", "education": "Educação",
+    "risks": "Riscos Digitais", "family": "Família", "latam": "LATAM", "peru": "Peru",
+    "library": "Biblioteca", "timeline": "Linha do Tempo", "researchers": "Pesquisadores", "faq": "FAQ / Metodologia"
+  },
+  "common": {
+    "search": "Buscar…", "searchCountry": "Buscar país…", "country": "País", "region": "Região",
+    "allRegions": "Todas as regiões", "verified": "verificado", "estimate": "estimado",
+    "noResults": "Sem resultados", "average": "méd.", "share": "Compartilhe o Observatório",
+    "shareSub": "Divulgue a evidência", "copy": "Copiar", "copied": "Copiado!", "loading": "Carregando dados…"
+  },
+  "badge": { "label": "ⓘ Síntese · ver fontes", "modalTitle": "Sobre os dados", "sources": "Fontes", "dismiss": "Entendi" },
+  "metric": { "access": "Acesso a smartphone", "hours": "Horas/dia", "age": "Idade do 1º smartphone", "social": "Uso de redes", "internet": "Penetração de internet" },
+  "panorama": {
+    "title": "Panorama mundial", "subtitle": "Acesso, uso e intensidade de smartphones e internet entre adolescentes, por país.",
+    "kpiAccess": "Acesso a smartphone (méd.)", "kpiHours": "Horas de tela/dia (méd.)",
+    "kpiAge": "Idade do 1º smartphone (méd.)", "kpiSocial": "Uso de redes (méd.)",
+    "indicatorLabel": "Indicador do mapa:", "mapTitle": "Mapa interativo", "rankingTitle": "Ranking de países — {{metric}}"
+  },
+  "mental": {
+    "title": "Saúde mental", "subtitle": "Prevalências autorrelatadas e sua relação com o tempo de tela.",
+    "kpiAnxiety": "Ansiedade (méd.)", "kpiDepression": "Depressão (méd.)", "kpiCyber": "Cyberbullying vítima (méd.)", "kpiSleep": "Problemas de sono (méd.)",
+    "byCountry": "Indicadores de saúde mental por país", "corrTitle": "Correlação: tempo de tela ↔ sintomas depressivos"
+  },
+  "education": { "title": "Educação", "useVsDistract": "Uso educativo vs. distração", "skillsVsPerf": "Competências digitais e percepção acadêmica" },
+  "risks": { "title": "Riscos digitais", "prevTitle": "Prevalência de riscos", "byAgeTitle": "Uso problemático por idade" },
+  "family": { "title": "Família e mediação parental", "subtitle": "Regras, supervisão, controle parental e idade do primeiro smartphone.", "stratTitle": "Estratégias de mediação parental", "agesTitle": "Idade de entrega do primeiro smartphone" },
+  "latam": { "title": "América Latina", "subtitle": "Foco regional. Fontes: CEPAL, pesquisas nacionais, ITU.", "usageTitle": "Acesso e conectividade", "wellTitle": "Indicadores de bem-estar", "tableTitle": "Tabela comparativa LATAM" },
+  "peru": { "title": "Peru", "sourcesTitle": "Fontes nacionais", "studiesTitle": "Estudos regionais/nacionais na biblioteca" },
+  "library": { "title": "Biblioteca científica", "subtitle": "Estudos e relatórios indexados por ano, amostra, achados e DOI/fonte.", "count": "{{n}} estudo(s)", "mod": { "all": "Todos" } },
+  "timeline": { "title": "Linha do tempo", "subtitle": "Marcos tecnológicos e de comportamento adolescente, 2005–presente." },
+  "researchers": { "title": "Painel para pesquisadores", "subtitle": "Filtre o conjunto de dados e exporte em CSV ou JSON.", "count": "{{n}} país(es)" },
+  "faq": {
+    "title": "Perguntas frequentes e metodologia", "subtitle": "Como é construído, como ler e como citar. Transparência total.",
+    "shareTitle": "Compartilhe o Observatório",
+    "q1": "Estes dados são oficiais?", "q2": "O uso de smartphones causa problemas de saúde mental?",
+    "q3": "De onde vêm os dados?", "q4": "Como cito o Observatório ou um estudo?",
+    "q5": "Posso baixar os dados?", "q6": "Está disponível em outros idiomas?", "q7": "Como contribuo ou reporto um erro?"
+  }
+}

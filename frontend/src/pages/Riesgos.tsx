@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { useData } from "../lib/store";
 import PageState from "../components/PageState";
 import ChartCard from "../components/ChartCard";
@@ -11,6 +12,7 @@ export default function Riesgos() {
 
 function Content() {
   const { risks } = useData();
+  const { t } = useTranslation();
   if (!risks) return null;
 
   const bar = {
@@ -24,30 +26,19 @@ function Content() {
   const byAge = {
     ...baseOption(),
     color: [PALETTE.amber],
-    xAxis: { ...baseOption().xAxis, data: risks.by_age.map((r) => `${r.age} a`) },
+    xAxis: { ...baseOption().xAxis, data: risks.by_age.map((r) => `${r.age}`) },
     yAxis: { ...baseOption().yAxis, axisLabel: { color: "#64748b", formatter: "{value}%" } },
     series: [{ type: "line", smooth: true, areaStyle: { opacity: 0.12 }, data: risks.by_age.map((r) => r.problematic_use_pct) }],
   };
 
   return (
     <div className="space-y-6">
-      <div>
-        <h1 className="text-xl font-bold text-slate-100">Riesgos digitales</h1>
-        <p className="text-sm text-slate-500">{risks.note}</p>
-      </div>
+      <div><h1 className="text-xl font-bold text-slate-100">{t("risks.title")}</h1></div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-        <ChartCard title="Prevalencia de riesgos" subtitle="% de adolescentes expuestos (síntesis)">
-          <EChart option={bar} height={360} />
-        </ChartCard>
-        <ChartCard title="Uso problemático por edad" subtitle="Pico en la adolescencia media (~13-15 años)">
-          <EChart option={byAge} height={360} />
-        </ChartCard>
+        <ChartCard title={t("risks.prevTitle")} subtitle={t("risks.prevSub")}><EChart option={bar} height={360} /></ChartCard>
+        <ChartCard title={t("risks.byAgeTitle")} subtitle={t("risks.byAgeSub")}><EChart option={byAge} height={360} /></ChartCard>
       </div>
-      <div className="card text-sm text-slate-400">
-        Las cifras combinan definiciones de varias fuentes (EU Kids Online, WHO-HBSC, INHOPE, meta-análisis). El
-        <strong> ciberacoso</strong> y el <strong>uso problemático</strong> son los riesgos más prevalentes y mejor
-        documentados; <strong>grooming</strong> y <strong>sextorsión</strong> son menos frecuentes pero de alto impacto.
-      </div>
+      <div className="card text-sm text-slate-400">{t("risks.note")}</div>
     </div>
   );
 }

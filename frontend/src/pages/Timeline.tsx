@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { useData } from "../lib/store";
 import PageState from "../components/PageState";
 
@@ -7,12 +8,13 @@ export default function Timeline() {
 
 function Content() {
   const { timeline } = useData();
+  const { t } = useTranslation();
   if (!timeline) return null;
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-xl font-bold text-slate-100">Línea de tiempo</h1>
-        <p className="text-sm text-slate-500">Hitos tecnológicos y de comportamiento adolescente, 2005–presente.</p>
+        <h1 className="text-xl font-bold text-slate-100">{t("timeline.title")}</h1>
+        <p className="text-sm text-slate-500">{t("timeline.subtitle")}</p>
       </div>
       <div className="relative pl-6">
         <div className="absolute left-2 top-1 bottom-1 w-px bg-ink-600" />

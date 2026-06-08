@@ -1,0 +1,46 @@
+{
+  "app": { "brand": "Observatoire", "tagline": "Adolescents & Écrans", "stats": "{{countries}} pays · {{studies}} études" },
+  "header": { "subtitle": "Usage des smartphones, réseaux sociaux et internet chez les adolescents · preuves mondiales" },
+  "footer": { "platform": "Plateforme de recherche · à but non lucratif", "by": "Par" },
+  "theme": { "day": "Jour", "night": "Nuit" },
+  "lang": { "label": "Langue" },
+  "nav": {
+    "panorama": "Panorama mondial", "mental": "Santé mentale", "education": "Éducation",
+    "risks": "Risques numériques", "family": "Famille", "latam": "LATAM", "peru": "Pérou",
+    "library": "Bibliothèque", "timeline": "Chronologie", "researchers": "Chercheurs", "faq": "FAQ / Méthodologie"
+  },
+  "common": {
+    "search": "Rechercher…", "searchCountry": "Rechercher un pays…", "country": "Pays", "region": "Région",
+    "allRegions": "Toutes les régions", "verified": "vérifié", "estimate": "estimé",
+    "noResults": "Aucun résultat", "average": "moy.", "share": "Partagez l’Observatoire",
+    "shareSub": "Diffusez les preuves", "copy": "Copier", "copied": "Copié !", "loading": "Chargement des données…"
+  },
+  "badge": { "label": "ⓘ Synthèse · voir les sources", "modalTitle": "À propos des données", "sources": "Sources", "dismiss": "Compris" },
+  "metric": { "access": "Accès au smartphone", "hours": "Heures/jour", "age": "Âge du 1er smartphone", "social": "Usage des réseaux", "internet": "Pénétration d’internet" },
+  "panorama": {
+    "title": "Panorama mondial", "subtitle": "Accès, usage et intensité des smartphones et d’internet chez les adolescents, par pays.",
+    "kpiAccess": "Accès au smartphone (moy.)", "kpiHours": "Heures d’écran/jour (moy.)",
+    "kpiAge": "Âge du 1er smartphone (moy.)", "kpiSocial": "Usage des réseaux (moy.)",
+    "indicatorLabel": "Indicateur de la carte :", "mapTitle": "Carte interactive", "rankingTitle": "Classement des pays — {{metric}}"
+  },
+  "mental": {
+    "title": "Santé mentale", "subtitle": "Prévalences autodéclarées et leur lien avec le temps d’écran.",
+    "kpiAnxiety": "Anxiété (moy.)", "kpiDepression": "Dépression (moy.)", "kpiCyber": "Cyberharcèlement victime (moy.)", "kpiSleep": "Problèmes de sommeil (moy.)",
+    "byCountry": "Indicateurs de santé mentale par pays", "corrTitle": "Corrélation : temps d’écran ↔ symptômes dépressifs"
+  },
+  "education": { "title": "Éducation", "useVsDistract": "Usage éducatif vs. distraction", "skillsVsPerf": "Compétences numériques et perception scolaire" },
+  "risks": { "title": "Risques numériques", "prevTitle": "Prévalence des risques", "byAgeTitle": "Usage problématique par âge" },
+  "family": { "title": "Famille et médiation parentale", "subtitle": "Règles, supervision, contrôle parental et âge du premier smartphone.", "stratTitle": "Stratégies de médiation parentale", "agesTitle": "Âge de remise du premier smartphone" },
+  "latam": { "title": "Amérique latine", "subtitle": "Focus régional. Sources : CEPAL, enquêtes nationales, UIT.", "usageTitle": "Accès et connectivité", "wellTitle": "Indicateurs de bien-être", "tableTitle": "Tableau comparatif LATAM" },
+  "peru": { "title": "Pérou", "sourcesTitle": "Sources nationales", "studiesTitle": "Études régionales/nationales dans la bibliothèque" },
+  "library": { "title": "Bibliothèque scientifique", "subtitle": "Études et rapports indexés par année, échantillon, résultats et DOI/source.", "count": "{{n}} étude(s)", "mod": { "all": "Toutes" } },
+  "timeline": { "title": "Chronologie", "subtitle": "Jalons technologiques et comportementaux des adolescents, 2005–présent." },
+  "researchers": { "title": "Tableau de bord pour chercheurs", "subtitle": "Filtrez le jeu de données et exportez-le en CSV ou JSON.", "count": "{{n}} pays" },
+  "faq": {
+    "title": "Questions fréquentes et méthodologie", "subtitle": "Comment c’est construit, comment le lire et comment le citer. Transparence totale.",
+    "shareTitle": "Partagez l’Observatoire",
+    "q1": "Ces données sont-elles officielles ?", "q2": "L’usage du smartphone cause-t-il des problèmes de santé mentale ?",
+    "q3": "D’où viennent les données ?", "q4": "Comment citer l’Observatoire ou une étude ?",
+    "q5": "Puis-je télécharger les données ?", "q6": "Est-ce disponible dans d’autres langues ?", "q7": "Comment contribuer ou signaler une erreur ?"
+  }
+}
