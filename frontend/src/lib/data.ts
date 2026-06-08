@@ -17,17 +17,17 @@ export interface Mental {
 export interface EduRow { country: string; academic_perception: number; educational_use_pct: number; classroom_distraction_pct: number; digital_skills_pct: number; }
 export interface Education { rows: EduRow[]; note: string }
 export interface Risks {
-  rows: { risk: string; prevalence_pct: number; source: string; status: string }[];
+  rows: { key: string; risk: string; prevalence_pct: number; source: string; status: string }[];
   by_age: { age: number; problematic_use_pct: number }[]; note: string;
 }
 export interface Family {
-  rows: { metric: string; value_pct: number; status: string; source: string }[];
+  rows: { key: string; metric: string; value_pct: number; status: string; source: string }[];
   first_phone_given_age: { country: string; age: number }[];
 }
 export interface Latam { rows: any[]; note: string }
 export interface Peru {
   country: string;
-  indicators: { metric: string; value_pct: number; source: string; status: string }[];
+  indicators: { key: string; metric: string; value_pct: number; source: string; status: string }[];
   note: string; sources: { name: string; url: string }[];
 }
 export interface Study {
@@ -36,7 +36,7 @@ export interface Study {
   source: string; module: string; status: string;
 }
 export interface Studies { count: number; rows: Study[] }
-export interface Timeline { rows: { year: number; title: string; desc: string }[] }
+export interface Timeline { rows: { key: string; year: number; title: string; desc: string }[] }
 export interface Meta {
   title: string; generated_by: string; n_countries: number; n_studies: number;
   disclaimer: string; sources: string[];

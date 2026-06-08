@@ -91,5 +91,39 @@
     "q5": "我可以下载数据吗？", "a5": "可以。研究者模块支持筛选并导出为 CSV 或 JSON。原始 JSON 位于 /data/*.json（如 /data/countries.json）。",
     "q6": "是否提供其他语言？", "a6": "是的：平台以 10 种最常用语言呈现（英语、中文、印地语、西班牙语、法语、阿拉伯语、孟加拉语、葡萄牙语、俄语、印尼语），并支持阿拉伯语的从右到左。界面已翻译；部分长文本与数据内容在审校完成前可能以英语/西班牙语显示。",
     "q7": "如何贡献或报告错误？", "a7": "项目在 GitHub 上开放。你可以提交 issue 或 PR，将研究/来源连同其 DOI 添加到 build_data.py。"
+  },
+  "data": {
+    "risk": {
+      "cyberbullying_victim": "网络欺凌（受害者）", "grooming": "诱骗 / 陌生人接触",
+      "sexting": "性短信（发送）", "scams": "接触诈骗/欺诈",
+      "problematic_use": "智能手机问题性使用", "tech_addiction": "技术成瘾（风险）",
+      "harmful_content": "接触有害内容"
+    },
+    "fam": {
+      "rules": "有使用规则的家庭", "supervision": "主动的家长监督",
+      "controls": "使用家长控制的父母", "high_risk": "认为风险高的父母",
+      "time_limits": "约定使用时长", "check_device": "检查孩子的设备"
+    },
+    "peruInd": {
+      "internet_homes": "可上网的家庭", "internet_users": "使用互联网的人口（≥6岁）",
+      "teen_smartphone": "拥有自己手机的青少年（约）", "first_age": "首部手机平均年龄（约）",
+      "screen_hours": "每日屏幕小时数（约）", "school_cyber": "上报的校园网络欺凌（SíseVe）"
+    },
+    "corr": { "x": "每日屏幕小时数", "note": "文献报告的正向关联为小到中等（非因果）。见 Twenge 2018、Riehm 2019、Orben & Przybylski 2019。" }
+  },
+  "tl": {
+    "2005": { "t": "YouTube", "d": "YouTube 诞生；在线视频开始普及。" },
+    "2007": { "t": "iPhone", "d": "苹果发布 iPhone：现代智能手机时代开启。" },
+    "2010": { "t": "Instagram / iPad", "d": "Instagram 普及社交照片；iPad 问世。" },
+    "2011": { "t": "Snapchat", "d": "Snapchat 在青少年中引入阅后即焚内容。" },
+    "2012": { "t": "Facebook 收购 Instagram", "d": "移动社交网络的整合。" },
+    "2016": { "t": "TikTok（抖音）", "d": "字节跳动推出抖音/TikTok；短视频兴起。" },
+    "2017": { "t": "智能手机超过半数青少年", "d": "在高收入国家，智能手机在青少年中成为主流。" },
+    "2018": { "t": "Twenge / Orben 之争", "d": "关于屏幕与幸福感的科学争论加剧。" },
+    "2020": { "t": "COVID-19 大流行", "d": "封锁使屏幕使用与远程学习激增。" },
+    "2022": { "t": "ChatGPT / 生成式 AI", "d": "OpenAI 发布 ChatGPT（2022年11月）：生成式 AI 横空出世。" },
+    "2023": { "t": "年龄监管", "d": "各州与各国就年龄限制与成瘾性设计展开辩论。" },
+    "2024": { "t": "《焦虑的一代》/ HBSC", "d": "Haidt 推广该论点；WHO-HBSC 量化问题性使用。" },
+    "2025": { "t": "课堂禁令", "d": "学校禁止智能手机的浪潮日益高涨。" }
   }
 }

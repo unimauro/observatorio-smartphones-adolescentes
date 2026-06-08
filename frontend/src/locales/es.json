@@ -102,5 +102,39 @@
     "q5": "¿Puedo descargar los datos?", "a5": "Sí. El módulo Investigadores permite filtrar y exportar en CSV o JSON. Los JSON crudos están en /data/*.json (p.ej. /data/countries.json).",
     "q6": "¿Está disponible en otros idiomas?", "a6": "Sí: la plataforma se presenta en los 10 idiomas más usados (inglés, chino, hindi, español, francés, árabe, bengalí, portugués, ruso, indonesio), con soporte RTL para árabe. La interfaz está traducida; algunos textos largos y el contenido de los datos pueden mostrarse en inglés/español mientras se completa la revisión.",
     "q7": "¿Cómo contribuyo o reporto un error?", "a7": "El proyecto es abierto en GitHub. Puedes abrir un issue o un PR añadiendo estudios/fuentes a build_data.py con su DOI."
+  },
+  "data": {
+    "risk": {
+      "cyberbullying_victim": "Ciberacoso (víctima)", "grooming": "Grooming / contacto de extraños",
+      "sexting": "Sexting (envío)", "scams": "Exposición a estafas/fraude",
+      "problematic_use": "Uso problemático de smartphone", "tech_addiction": "Adicción tecnológica (riesgo)",
+      "harmful_content": "Exposición a contenido dañino"
+    },
+    "fam": {
+      "rules": "Hogares con normas de uso", "supervision": "Supervisión parental activa",
+      "controls": "Padres que usan control parental", "high_risk": "Padres que perciben riesgo alto",
+      "time_limits": "Acuerdan límites de tiempo", "check_device": "Revisan el dispositivo del hijo"
+    },
+    "peruInd": {
+      "internet_homes": "Hogares con acceso a internet", "internet_users": "Población que usa internet (≥6 años)",
+      "teen_smartphone": "Adolescentes con smartphone propio (aprox.)", "first_age": "Edad promedio del primer smartphone (aprox.)",
+      "screen_hours": "Horas de pantalla/día (aprox.)", "school_cyber": "Ciberacoso escolar reportado (SíseVe)"
+    },
+    "corr": { "x": "Horas de pantalla/día", "note": "Asociación positiva pequeña-moderada reportada en la literatura (no implica causalidad). Ver Twenge 2018, Riehm 2019, Orben & Przybylski 2019." }
+  },
+  "tl": {
+    "2005": { "t": "YouTube", "d": "Nace YouTube; el video en línea empieza a masificarse." },
+    "2007": { "t": "iPhone", "d": "Apple lanza el iPhone: comienza la era del smartphone moderno." },
+    "2010": { "t": "Instagram / iPad", "d": "Instagram populariza la foto social; llega el iPad." },
+    "2011": { "t": "Snapchat", "d": "Snapchat introduce el contenido efímero entre adolescentes." },
+    "2012": { "t": "Facebook compra Instagram", "d": "Consolidación de las redes sociales móviles." },
+    "2016": { "t": "TikTok (Douyin)", "d": "ByteDance lanza Douyin/TikTok; auge del video corto." },
+    "2017": { "t": "Smartphones >50% adolescentes", "d": "El smartphone se vuelve mayoritario entre adolescentes en países de ingreso alto." },
+    "2018": { "t": "Debate Twenge / Orben", "d": "Se intensifica el debate científico sobre pantallas y bienestar." },
+    "2020": { "t": "Pandemia COVID-19", "d": "Los confinamientos disparan el uso de pantallas y la educación remota." },
+    "2022": { "t": "ChatGPT / IA generativa", "d": "OpenAI lanza ChatGPT (nov-2022): irrumpe la IA generativa." },
+    "2023": { "t": "Regulación de edad", "d": "Estados y países debaten límites de edad y diseño adictivo." },
+    "2024": { "t": "The Anxious Generation / HBSC", "d": "Haidt populariza la tesis; WHO-HBSC cuantifica el uso problemático." },
+    "2025": { "t": "Prohibiciones en aula", "d": "Crece la ola de prohibición de smartphones en escuelas." }
   }
 }

@@ -1,36 +1,42 @@
 {
   "rows": [
     {
+      "key": "rules",
       "metric": "Hogares con normas de uso",
       "value_pct": 58,
       "status": "estimate",
       "source": "Síntesis (Pew Parenting 2020, encuestas regionales)"
     },
     {
+      "key": "supervision",
       "metric": "Supervisión parental activa",
       "value_pct": 46,
       "status": "estimate",
       "source": "Síntesis (Pew Parenting 2020, encuestas regionales)"
     },
     {
+      "key": "controls",
       "metric": "Padres que usan control parental",
       "value_pct": 39,
       "status": "estimate",
       "source": "Síntesis (Pew Parenting 2020, encuestas regionales)"
     },
     {
+      "key": "high_risk",
       "metric": "Padres que perciben riesgo alto",
       "value_pct": 67,
       "status": "estimate",
       "source": "Síntesis (Pew Parenting 2020, encuestas regionales)"
     },
     {
+      "key": "time_limits",
       "metric": "Acuerdan límites de tiempo",
       "value_pct": 51,
       "status": "estimate",
       "source": "Síntesis (Pew Parenting 2020, encuestas regionales)"
     },
     {
+      "key": "check_device",
       "metric": "Revisan el dispositivo del hijo",
       "value_pct": 43,
       "status": "estimate",

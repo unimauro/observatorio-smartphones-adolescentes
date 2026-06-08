@@ -24,8 +24,8 @@ function Content() {
 
       <div className="grid grid-cols-2 lg:grid-cols-3 gap-3">
         {peru.indicators.map((ind) => (
-          <KpiCard key={ind.metric} label={ind.metric}
-            value={ind.metric.includes("Edad") || ind.metric.includes("Horas") ? num(ind.value_pct, 1) : `${num(ind.value_pct, 0)}%`}
+          <KpiCard key={ind.key} label={t(`data.peruInd.${ind.key}`)}
+            value={ind.key === "first_age" || ind.key === "screen_hours" ? num(ind.value_pct, 1) : `${num(ind.value_pct, 0)}%`}
             sub={`${ind.source} · ${ind.status === "verified" ? t("common.verified") : t("common.estimate")}`}
             tone={ind.status === "verified" ? "good" : "warn"} />
         ))}

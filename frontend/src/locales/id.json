@@ -91,5 +91,39 @@
     "q5": "Bisakah saya mengunduh data?", "a5": "Ya. Modul Peneliti memungkinkan penyaringan dan ekspor sebagai CSV atau JSON. JSON mentah ada di /data/*.json (mis. /data/countries.json).",
     "q6": "Apakah tersedia dalam bahasa lain?", "a6": "Ya: platform disajikan dalam 10 bahasa paling banyak digunakan (Inggris, Mandarin, Hindi, Spanyol, Prancis, Arab, Bengali, Portugis, Rusia, Indonesia), dengan dukungan RTL untuk bahasa Arab. Antarmuka telah diterjemahkan; sebagian teks panjang dan konten data dapat tampil dalam bahasa Inggris/Spanyol sementara peninjauan diselesaikan.",
     "q7": "Bagaimana saya berkontribusi atau melaporkan kesalahan?", "a7": "Proyek ini terbuka di GitHub. Anda dapat membuka issue atau PR untuk menambahkan studi/sumber ke build_data.py beserta DOI-nya."
+  },
+  "data": {
+    "risk": {
+      "cyberbullying_victim": "Perundungan siber (korban)", "grooming": "Grooming / kontak orang asing",
+      "sexting": "Sexting (mengirim)", "scams": "Terpapar penipuan/kecurangan",
+      "problematic_use": "Penggunaan ponsel yang bermasalah", "tech_addiction": "Kecanduan teknologi (risiko)",
+      "harmful_content": "Terpapar konten berbahaya"
+    },
+    "fam": {
+      "rules": "Rumah tangga dengan aturan penggunaan", "supervision": "Pengawasan orang tua aktif",
+      "controls": "Orang tua yang memakai kontrol orang tua", "high_risk": "Orang tua yang menilai risiko tinggi",
+      "time_limits": "Menyepakati batas waktu", "check_device": "Memeriksa perangkat anak"
+    },
+    "peruInd": {
+      "internet_homes": "Rumah tangga dengan akses internet", "internet_users": "Pengguna internet (≥6 tahun)",
+      "teen_smartphone": "Remaja dengan ponsel sendiri (perkiraan)", "first_age": "Usia rata-rata ponsel pertama (perkiraan)",
+      "screen_hours": "Jam layar/hari (perkiraan)", "school_cyber": "Perundungan siber sekolah dilaporkan (SíseVe)"
+    },
+    "corr": { "x": "Jam layar/hari", "note": "Keterkaitan positif kecil hingga sedang yang dilaporkan dalam literatur (bukan kausal). Lihat Twenge 2018, Riehm 2019, Orben & Przybylski 2019." }
+  },
+  "tl": {
+    "2005": { "t": "YouTube", "d": "YouTube lahir; video daring mulai meluas." },
+    "2007": { "t": "iPhone", "d": "Apple meluncurkan iPhone: era ponsel pintar modern dimulai." },
+    "2010": { "t": "Instagram / iPad", "d": "Instagram mempopulerkan foto sosial; iPad hadir." },
+    "2011": { "t": "Snapchat", "d": "Snapchat memperkenalkan konten sesaat di kalangan remaja." },
+    "2012": { "t": "Facebook membeli Instagram", "d": "Konsolidasi jejaring sosial seluler." },
+    "2016": { "t": "TikTok (Douyin)", "d": "ByteDance meluncurkan Douyin/TikTok; kebangkitan video pendek." },
+    "2017": { "t": "Ponsel pintar >50% remaja", "d": "Ponsel pintar menjadi mayoritas di kalangan remaja di negara berpenghasilan tinggi." },
+    "2018": { "t": "Debat Twenge / Orben", "d": "Debat ilmiah tentang layar dan kesejahteraan meningkat." },
+    "2020": { "t": "Pandemi COVID-19", "d": "Penguncian melonjakkan penggunaan layar dan pembelajaran jarak jauh." },
+    "2022": { "t": "ChatGPT / AI generatif", "d": "OpenAI meluncurkan ChatGPT (Nov 2022): AI generatif menerobos." },
+    "2023": { "t": "Regulasi usia", "d": "Negara bagian dan negara memperdebatkan batas usia dan desain adiktif." },
+    "2024": { "t": "The Anxious Generation / HBSC", "d": "Haidt mempopulerkan tesis; WHO-HBSC mengukur penggunaan bermasalah." },
+    "2025": { "t": "Larangan di kelas", "d": "Gelombang larangan ponsel pintar di sekolah meningkat." }
   }
 }

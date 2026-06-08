@@ -22,7 +22,7 @@ function Content() {
     grid: { left: 200, right: 24, top: 10, bottom: 30 },
     color: [PALETTE.teal],
     xAxis: { type: "value", max: 100, axisLabel: { color: "#64748b", formatter: "{value}%" }, splitLine: { lineStyle: { color: "rgba(148,163,184,0.25)", type: "dashed" } } },
-    yAxis: { type: "category", inverse: true, data: family.rows.map((r) => r.metric), axisLabel: { color: "#94a3b8", fontSize: 11 }, axisLine: { lineStyle: { color: "rgba(148,163,184,0.35)" } } },
+    yAxis: { type: "category", inverse: true, data: family.rows.map((r) => t(`data.fam.${r.key}`)), axisLabel: { color: "#94a3b8", fontSize: 11 }, axisLine: { lineStyle: { color: "rgba(148,163,184,0.35)" } } },
     series: [{ type: "bar", data: family.rows.map((r) => r.value_pct), itemStyle: { borderRadius: [0, 3, 3, 0] }, barWidth: "55%" }],
   };
   const ages = {

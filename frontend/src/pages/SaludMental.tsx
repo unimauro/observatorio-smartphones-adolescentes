@@ -42,7 +42,7 @@ function Content() {
     ...baseOption(),
     tooltip: { trigger: "item", backgroundColor: "#111929", borderColor: "#26324a", textStyle: { color: "#e2e8f0" }, formatter: (o: any) => `${o.value[0]} h → ${o.value[1]}%` },
     color: [PALETTE.violet],
-    xAxis: { type: "value", name: mental.correlation.x_label, nameLocation: "middle", nameGap: 28, axisLabel: { color: "#64748b" }, splitLine: { lineStyle: { color: "rgba(148,163,184,0.25)", type: "dashed" } } },
+    xAxis: { type: "value", name: t("data.corr.x"), nameLocation: "middle", nameGap: 28, axisLabel: { color: "#64748b" }, splitLine: { lineStyle: { color: "rgba(148,163,184,0.25)", type: "dashed" } } },
     yAxis: { type: "value", axisLabel: { color: "#64748b" }, splitLine: { lineStyle: { color: "rgba(148,163,184,0.25)", type: "dashed" } } },
     series: [
       { type: "scatter", symbolSize: 14, data: p.map((d) => [d.daily_hours, d.depression_pct]) },
@@ -68,7 +68,7 @@ function Content() {
         <EChart option={grouped} height={360} />
       </ChartCard>
 
-      <ChartCard title={t("mental.corrTitle")} subtitle={mental.correlation.note}>
+      <ChartCard title={t("mental.corrTitle")} subtitle={t("data.corr.note")}>
         <EChart option={scatter} height={320} />
         <p className="text-xs text-brand-amber mt-2">{t("mental.corrWarning")}</p>
       </ChartCard>

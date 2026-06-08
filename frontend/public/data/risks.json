@@ -1,42 +1,49 @@
 {
   "rows": [
     {
+      "key": "cyberbullying_victim",
       "risk": "Ciberbullying (víctima)",
       "prevalence_pct": 18,
       "source": "EU Kids Online / WHO-HBSC",
       "status": "estimate"
     },
     {
+      "key": "grooming",
       "risk": "Grooming / contacto de extraños",
       "prevalence_pct": 12,
       "source": "INHOPE / Global Kids Online",
       "status": "estimate"
     },
     {
+      "key": "sexting",
       "risk": "Sexting (envío)",
       "prevalence_pct": 14,
       "source": "Madigan et al. 2018, JAMA Pediatrics",
       "status": "estimate"
     },
     {
+      "key": "scams",
       "risk": "Exposición a estafas/fraude",
       "prevalence_pct": 22,
       "source": "Síntesis",
       "status": "estimate"
     },
     {
+      "key": "problematic_use",
       "risk": "Uso problemático de smartphone",
       "prevalence_pct": 23,
       "source": "WHO-HBSC 2024 (datos 2022)",
       "status": "estimate"
     },
     {
+      "key": "tech_addiction",
       "risk": "Adicción tecnológica (riesgo)",
       "prevalence_pct": 11,
       "source": "Síntesis",
       "status": "estimate"
     },
     {
+      "key": "harmful_content",
       "risk": "Exposición a contenido dañino",
       "prevalence_pct": 27,
       "source": "Global Kids Online",

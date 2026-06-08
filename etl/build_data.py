@@ -145,16 +145,16 @@ def education_json():
 # --- 4. RIESGOS DIGITALES ---------------------------------------------------
 def risks_json():
     risks = [
-        ("Ciberbullying (víctima)", 18, "EU Kids Online / WHO-HBSC"),
-        ("Grooming / contacto de extraños", 12, "INHOPE / Global Kids Online"),
-        ("Sexting (envío)", 14, "Madigan et al. 2018, JAMA Pediatrics"),
-        ("Exposición a estafas/fraude", 22, "Síntesis"),
-        ("Uso problemático de smartphone", 23, "WHO-HBSC 2024 (datos 2022)"),
-        ("Adicción tecnológica (riesgo)", 11, "Síntesis"),
-        ("Exposición a contenido dañino", 27, "Global Kids Online"),
+        ("cyberbullying_victim", "Ciberbullying (víctima)", 18, "EU Kids Online / WHO-HBSC"),
+        ("grooming", "Grooming / contacto de extraños", 12, "INHOPE / Global Kids Online"),
+        ("sexting", "Sexting (envío)", 14, "Madigan et al. 2018, JAMA Pediatrics"),
+        ("scams", "Exposición a estafas/fraude", 22, "Síntesis"),
+        ("problematic_use", "Uso problemático de smartphone", 23, "WHO-HBSC 2024 (datos 2022)"),
+        ("tech_addiction", "Adicción tecnológica (riesgo)", 11, "Síntesis"),
+        ("harmful_content", "Exposición a contenido dañino", 27, "Global Kids Online"),
     ]
-    rows = [{"risk": r, "prevalence_pct": p, "source": s,
-             "status": "estimate"} for (r, p, s) in risks]
+    rows = [{"key": k, "risk": r, "prevalence_pct": p, "source": s,
+             "status": "estimate"} for (k, r, p, s) in risks]
     # serie por edad (uso problemático sube con la edad media-adolescencia)
     by_age = [{"age": a, "problematic_use_pct": v} for a, v in
               [(11, 9), (12, 12), (13, 16), (14, 21), (15, 25), (16, 24), (17, 22)]]
@@ -165,12 +165,12 @@ def risks_json():
 # --- 5. FAMILIA -------------------------------------------------------------
 def family_json():
     rows = [
-        {"metric": "Hogares con normas de uso", "value_pct": 58},
-        {"metric": "Supervisión parental activa", "value_pct": 46},
-        {"metric": "Padres que usan control parental", "value_pct": 39},
-        {"metric": "Padres que perciben riesgo alto", "value_pct": 67},
-        {"metric": "Acuerdan límites de tiempo", "value_pct": 51},
-        {"metric": "Revisan el dispositivo del hijo", "value_pct": 43},
+        {"key": "rules", "metric": "Hogares con normas de uso", "value_pct": 58},
+        {"key": "supervision", "metric": "Supervisión parental activa", "value_pct": 46},
+        {"key": "controls", "metric": "Padres que usan control parental", "value_pct": 39},
+        {"key": "high_risk", "metric": "Padres que perciben riesgo alto", "value_pct": 67},
+        {"key": "time_limits", "metric": "Acuerdan límites de tiempo", "value_pct": 51},
+        {"key": "check_device", "metric": "Revisan el dispositivo del hijo", "value_pct": 43},
     ]
     for r in rows:
         r["status"] = "estimate"
@@ -208,12 +208,12 @@ def latam_json():
 # --- 7. PERÚ ----------------------------------------------------------------
 def peru_json():
     indicators = [
-        {"metric": "Hogares con acceso a internet", "value_pct": 64, "source": "INEI ENAHO 2023", "status": "verified"},
-        {"metric": "Población que usa internet (≥6 años)", "value_pct": 76, "source": "INEI 2023", "status": "verified"},
-        {"metric": "Adolescentes con smartphone propio (aprox.)", "value_pct": 68, "source": "Síntesis INEI/encuestas", "status": "estimate"},
-        {"metric": "Edad promedio del primer smartphone (aprox.)", "value_pct": 11.6, "source": "Síntesis", "status": "estimate"},
-        {"metric": "Horas de pantalla/día (aprox.)", "value_pct": 6.5, "source": "Síntesis", "status": "estimate"},
-        {"metric": "Ciberacoso escolar reportado (SíseVe)", "value_pct": 21, "source": "MINEDU - SíseVe (síntesis)", "status": "estimate"},
+        {"key": "internet_homes", "metric": "Hogares con acceso a internet", "value_pct": 64, "source": "INEI ENAHO 2023", "status": "verified"},
+        {"key": "internet_users", "metric": "Población que usa internet (≥6 años)", "value_pct": 76, "source": "INEI 2023", "status": "verified"},
+        {"key": "teen_smartphone", "metric": "Adolescentes con smartphone propio (aprox.)", "value_pct": 68, "source": "Síntesis INEI/encuestas", "status": "estimate"},
+        {"key": "first_age", "metric": "Edad promedio del primer smartphone (aprox.)", "value_pct": 11.6, "source": "Síntesis", "status": "estimate"},
+        {"key": "screen_hours", "metric": "Horas de pantalla/día (aprox.)", "value_pct": 6.5, "source": "Síntesis", "status": "estimate"},
+        {"key": "school_cyber", "metric": "Ciberacoso escolar reportado (SíseVe)", "value_pct": 21, "source": "MINEDU - SíseVe (síntesis)", "status": "estimate"},
     ]
     return {
         "country": "Perú",
@@ -309,7 +309,7 @@ def timeline_json():
         (2024, "The Anxious Generation / HBSC", "Haidt populariza la tesis; WHO-HBSC cuantifica el uso problemático."),
         (2025, "Prohibiciones en aula", "Crece la ola de prohibición de smartphones en escuelas."),
     ]
-    return {"rows": [{"year": y, "title": t, "desc": d} for (y, t, d) in events]}
+    return {"rows": [{"key": str(y), "year": y, "title": t, "desc": d} for (y, t, d) in events]}
 
 
 def write(name, data):

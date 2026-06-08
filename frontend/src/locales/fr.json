@@ -92,5 +92,39 @@
     "q5": "Puis-je télécharger les données ?", "a5": "Oui. Le module Chercheurs permet de filtrer et d’exporter en CSV ou JSON. Les JSON bruts sont dans /data/*.json (p. ex. /data/countries.json).",
     "q6": "Est-ce disponible dans d’autres langues ?", "a6": "Oui : la plateforme est présentée dans les 10 langues les plus parlées (anglais, chinois, hindi, espagnol, français, arabe, bengali, portugais, russe, indonésien), avec prise en charge RTL pour l’arabe. L’interface est traduite ; certains textes longs et le contenu des données peuvent apparaître en anglais/espagnol en attendant la révision.",
     "q7": "Comment contribuer ou signaler une erreur ?", "a7": "Le projet est ouvert sur GitHub. Vous pouvez ouvrir une issue ou une PR en ajoutant des études/sources à build_data.py avec leur DOI."
+  },
+  "data": {
+    "risk": {
+      "cyberbullying_victim": "Cyberharcèlement (victime)", "grooming": "Pédopiégeage / contact d’inconnus",
+      "sexting": "Sexting (envoi)", "scams": "Exposition aux arnaques/fraudes",
+      "problematic_use": "Usage problématique du smartphone", "tech_addiction": "Addiction technologique (risque)",
+      "harmful_content": "Exposition à des contenus nuisibles"
+    },
+    "fam": {
+      "rules": "Foyers avec des règles d’usage", "supervision": "Supervision parentale active",
+      "controls": "Parents utilisant le contrôle parental", "high_risk": "Parents percevant un risque élevé",
+      "time_limits": "Convenir de limites de temps", "check_device": "Vérifier l’appareil de l’enfant"
+    },
+    "peruInd": {
+      "internet_homes": "Foyers avec accès à internet", "internet_users": "Population utilisant internet (≥6 ans)",
+      "teen_smartphone": "Adolescents avec smartphone personnel (approx.)", "first_age": "Âge moyen du 1er smartphone (approx.)",
+      "screen_hours": "Heures d’écran/jour (approx.)", "school_cyber": "Cyberharcèlement scolaire signalé (SíseVe)"
+    },
+    "corr": { "x": "Heures d’écran/jour", "note": "Association positive faible à modérée rapportée dans la littérature (non causale). Voir Twenge 2018, Riehm 2019, Orben & Przybylski 2019." }
+  },
+  "tl": {
+    "2005": { "t": "YouTube", "d": "Naissance de YouTube ; la vidéo en ligne commence à se généraliser." },
+    "2007": { "t": "iPhone", "d": "Apple lance l’iPhone : l’ère du smartphone moderne commence." },
+    "2010": { "t": "Instagram / iPad", "d": "Instagram popularise la photo sociale ; l’iPad arrive." },
+    "2011": { "t": "Snapchat", "d": "Snapchat introduit le contenu éphémère chez les adolescents." },
+    "2012": { "t": "Facebook rachète Instagram", "d": "Consolidation des réseaux sociaux mobiles." },
+    "2016": { "t": "TikTok (Douyin)", "d": "ByteDance lance Douyin/TikTok ; essor de la vidéo courte." },
+    "2017": { "t": "Smartphones >50 % des ados", "d": "Le smartphone devient majoritaire chez les adolescents des pays à revenu élevé." },
+    "2018": { "t": "Débat Twenge / Orben", "d": "Le débat scientifique sur les écrans et le bien-être s’intensifie." },
+    "2020": { "t": "Pandémie de COVID-19", "d": "Les confinements font bondir l’usage des écrans et l’enseignement à distance." },
+    "2022": { "t": "ChatGPT / IA générative", "d": "OpenAI lance ChatGPT (nov. 2022) : l’IA générative fait irruption." },
+    "2023": { "t": "Régulation de l’âge", "d": "États et pays débattent des limites d’âge et du design addictif." },
+    "2024": { "t": "The Anxious Generation / HBSC", "d": "Haidt popularise la thèse ; l’OMS-HBSC quantifie l’usage problématique." },
+    "2025": { "t": "Interdictions en classe", "d": "La vague d’interdiction des smartphones à l’école s’amplifie." }
   }
 }

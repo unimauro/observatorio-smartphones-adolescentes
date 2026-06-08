@@ -25,9 +25,9 @@ function Content() {
               <div className="card">
                 <div className="flex items-baseline gap-3">
                   <span className="text-brand-teal font-bold tabular">{e.year}</span>
-                  <span className="text-slate-100 font-semibold">{e.title}</span>
+                  <span className="text-slate-100 font-semibold">{t(`tl.${e.key}.t`, { defaultValue: e.title })}</span>
                 </div>
-                <p className="text-sm text-slate-400 mt-1">{e.desc}</p>
+                <p className="text-sm text-slate-400 mt-1">{t(`tl.${e.key}.d`, { defaultValue: e.desc })}</p>
               </div>
             </div>
           ))}

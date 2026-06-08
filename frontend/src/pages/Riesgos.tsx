@@ -20,7 +20,7 @@ function Content() {
     grid: { left: 180, right: 24, top: 10, bottom: 30 },
     color: [PALETTE.rose],
     xAxis: { type: "value", axisLabel: { color: "#64748b", formatter: "{value}%" }, splitLine: { lineStyle: { color: "rgba(148,163,184,0.25)", type: "dashed" } } },
-    yAxis: { type: "category", inverse: true, data: risks.rows.map((r) => r.risk), axisLabel: { color: "#94a3b8", fontSize: 11 }, axisLine: { lineStyle: { color: "rgba(148,163,184,0.35)" } } },
+    yAxis: { type: "category", inverse: true, data: risks.rows.map((r) => t(`data.risk.${r.key}`)), axisLabel: { color: "#94a3b8", fontSize: 11 }, axisLine: { lineStyle: { color: "rgba(148,163,184,0.35)" } } },
     series: [{ type: "bar", data: risks.rows.map((r) => r.prevalence_pct), itemStyle: { borderRadius: [0, 3, 3, 0] }, barWidth: "58%" }],
   };
   const byAge = {

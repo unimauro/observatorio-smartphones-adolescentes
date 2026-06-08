@@ -2,36 +2,42 @@
   "country": "Perú",
   "indicators": [
     {
+      "key": "internet_homes",
       "metric": "Hogares con acceso a internet",
       "value_pct": 64,
       "source": "INEI ENAHO 2023",
       "status": "verified"
     },
     {
+      "key": "internet_users",
       "metric": "Población que usa internet (≥6 años)",
       "value_pct": 76,
       "source": "INEI 2023",
       "status": "verified"
     },
     {
+      "key": "teen_smartphone",
       "metric": "Adolescentes con smartphone propio (aprox.)",
       "value_pct": 68,
       "source": "Síntesis INEI/encuestas",
       "status": "estimate"
     },
     {
+      "key": "first_age",
       "metric": "Edad promedio del primer smartphone (aprox.)",
       "value_pct": 11.6,
       "source": "Síntesis",
       "status": "estimate"
     },
     {
+      "key": "screen_hours",
       "metric": "Horas de pantalla/día (aprox.)",
       "value_pct": 6.5,
       "source": "Síntesis",
       "status": "estimate"
     },
     {
+      "key": "school_cyber",
       "metric": "Ciberacoso escolar reportado (SíseVe)",
       "value_pct": 21,
       "source": "MINEDU - SíseVe (síntesis)",
