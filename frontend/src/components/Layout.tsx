@@ -14,6 +14,7 @@ const NAV = [
   { to: "/biblioteca", label: "Biblioteca", icon: "📚" },
   { to: "/timeline", label: "Línea de Tiempo", icon: "🕰️" },
   { to: "/investigadores", label: "Investigadores", icon: "🔬" },
+  { to: "/faq", label: "FAQ / Metodología", icon: "❓" },
 ];
 
 export default function Layout() {

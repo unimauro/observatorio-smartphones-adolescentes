@@ -15,6 +15,7 @@ import Peru from "./pages/Peru";
 import Biblioteca from "./pages/Biblioteca";
 import Timeline from "./pages/Timeline";
 import Investigadores from "./pages/Investigadores";
+import Faq from "./pages/Faq";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
@@ -32,6 +33,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
             <Route path="biblioteca" element={<Biblioteca />} />
             <Route path="timeline" element={<Timeline />} />
             <Route path="investigadores" element={<Investigadores />} />
+            <Route path="faq" element={<Faq />} />
           </Route>
         </Routes>
       </HashRouter>
