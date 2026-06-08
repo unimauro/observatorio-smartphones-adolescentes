@@ -1,0 +1,69 @@
+{
+  "rows": [
+    {
+      "year": 2005,
+      "title": "YouTube",
+      "desc": "Nace YouTube; el video en línea empieza a masificarse."
+    },
+    {
+      "year": 2007,
+      "title": "iPhone",
+      "desc": "Apple lanza el iPhone: comienza la era del smartphone moderno."
+    },
+    {
+      "year": 2010,
+      "title": "Instagram / iPad",
+      "desc": "Instagram populariza la foto social; llega el iPad."
+    },
+    {
+      "year": 2011,
+      "title": "Snapchat",
+      "desc": "Snapchat introduce el contenido efímero entre adolescentes."
+    },
+    {
+      "year": 2012,
+      "title": "Facebook compra Instagram",
+      "desc": "Consolidación de las redes sociales móviles."
+    },
+    {
+      "year": 2016,
+      "title": "TikTok (Douyin)",
+      "desc": "ByteDance lanza Douyin/TikTok; auge del video corto."
+    },
+    {
+      "year": 2017,
+      "title": "Smartphones >50% adolescentes",
+      "desc": "El smartphone se vuelve mayoritario entre adolescentes en países de ingreso alto."
+    },
+    {
+      "year": 2018,
+      "title": "Twenge / Orben debate",
+      "desc": "Se intensifica el debate científico sobre pantallas y bienestar."
+    },
+    {
+      "year": 2020,
+      "title": "Pandemia COVID-19",
+      "desc": "Confinamientos disparan el uso de pantallas y la educación remota."
+    },
+    {
+      "year": 2022,
+      "title": "ChatGPT / IA generativa",
+      "desc": "OpenAI lanza ChatGPT (nov-2022): irrumpe la IA generativa."
+    },
+    {
+      "year": 2023,
+      "title": "Regulación de edad",
+      "desc": "Estados y países debaten límites de edad y diseño adictivo."
+    },
+    {
+      "year": 2024,
+      "title": "The Anxious Generation / HBSC",
+      "desc": "Haidt populariza la tesis; WHO-HBSC cuantifica el uso problemático."
+    },
+    {
+      "year": 2025,
+      "title": "Prohibiciones en aula",
+      "desc": "Crece la ola de prohibición de smartphones en escuelas."
+    }
+  ]
+}

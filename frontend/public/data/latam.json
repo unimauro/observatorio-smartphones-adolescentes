@@ -1,0 +1,71 @@
+{
+  "rows": [
+    {
+      "country": "Perú",
+      "smartphone_access_pct": 68,
+      "first_phone_age": 11.6,
+      "daily_hours": 6.5,
+      "social_media_pct": 76,
+      "internet_penetration_pct": 74,
+      "cyberbullying_victim_pct": 21,
+      "depression_pct": 19,
+      "status": "estimate"
+    },
+    {
+      "country": "Chile",
+      "smartphone_access_pct": 85,
+      "first_phone_age": 10.7,
+      "daily_hours": 7.2,
+      "social_media_pct": 86,
+      "internet_penetration_pct": 90,
+      "cyberbullying_victim_pct": 19,
+      "depression_pct": 21,
+      "status": "estimate"
+    },
+    {
+      "country": "Colombia",
+      "smartphone_access_pct": 74,
+      "first_phone_age": 11.4,
+      "daily_hours": 6.8,
+      "social_media_pct": 80,
+      "internet_penetration_pct": 73,
+      "cyberbullying_victim_pct": 20,
+      "depression_pct": 18,
+      "status": "estimate"
+    },
+    {
+      "country": "México",
+      "smartphone_access_pct": 78,
+      "first_phone_age": 11.2,
+      "daily_hours": 7.1,
+      "social_media_pct": 82,
+      "internet_penetration_pct": 76,
+      "cyberbullying_victim_pct": 18,
+      "depression_pct": 18,
+      "status": "estimate"
+    },
+    {
+      "country": "Argentina",
+      "smartphone_access_pct": 82,
+      "first_phone_age": 11.0,
+      "daily_hours": 7.0,
+      "social_media_pct": 85,
+      "internet_penetration_pct": 88,
+      "cyberbullying_victim_pct": 18,
+      "depression_pct": 19,
+      "status": "estimate"
+    },
+    {
+      "country": "Brasil",
+      "smartphone_access_pct": 80,
+      "first_phone_age": 10.9,
+      "daily_hours": 7.8,
+      "social_media_pct": 84,
+      "internet_penetration_pct": 81,
+      "cyberbullying_victim_pct": 20,
+      "depression_pct": 20,
+      "status": "estimate"
+    }
+  ],
+  "note": "Foco regional. Fuentes: CEPAL, encuestas nacionales, ITU."
+}

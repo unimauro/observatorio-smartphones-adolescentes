@@ -1,0 +1,86 @@
+{
+  "rows": [
+    {
+      "country": "Estados Unidos",
+      "academic_perception": -12,
+      "educational_use_pct": 54,
+      "classroom_distraction_pct": 65,
+      "digital_skills_pct": 62,
+      "status": "estimate",
+      "source": "Síntesis (OECD/PISA 2022, encuestas nacionales)"
+    },
+    {
+      "country": "Reino Unido",
+      "academic_perception": -10,
+      "educational_use_pct": 56,
+      "classroom_distraction_pct": 60,
+      "digital_skills_pct": 64,
+      "status": "estimate",
+      "source": "Síntesis (OECD/PISA 2022, encuestas nacionales)"
+    },
+    {
+      "country": "Corea del Sur",
+      "academic_perception": -8,
+      "educational_use_pct": 61,
+      "classroom_distraction_pct": 58,
+      "digital_skills_pct": 71,
+      "status": "estimate",
+      "source": "Síntesis (OECD/PISA 2022, encuestas nacionales)"
+    },
+    {
+      "country": "España",
+      "academic_perception": -14,
+      "educational_use_pct": 50,
+      "classroom_distraction_pct": 62,
+      "digital_skills_pct": 58,
+      "status": "estimate",
+      "source": "Síntesis (OECD/PISA 2022, encuestas nacionales)"
+    },
+    {
+      "country": "México",
+      "academic_perception": -16,
+      "educational_use_pct": 45,
+      "classroom_distraction_pct": 68,
+      "digital_skills_pct": 51,
+      "status": "estimate",
+      "source": "Síntesis (OECD/PISA 2022, encuestas nacionales)"
+    },
+    {
+      "country": "Perú",
+      "academic_perception": -18,
+      "educational_use_pct": 41,
+      "classroom_distraction_pct": 70,
+      "digital_skills_pct": 47,
+      "status": "estimate",
+      "source": "Síntesis (OECD/PISA 2022, encuestas nacionales)"
+    },
+    {
+      "country": "Chile",
+      "academic_perception": -13,
+      "educational_use_pct": 49,
+      "classroom_distraction_pct": 64,
+      "digital_skills_pct": 55,
+      "status": "estimate",
+      "source": "Síntesis (OECD/PISA 2022, encuestas nacionales)"
+    },
+    {
+      "country": "Brasil",
+      "academic_perception": -15,
+      "educational_use_pct": 47,
+      "classroom_distraction_pct": 66,
+      "digital_skills_pct": 53,
+      "status": "estimate",
+      "source": "Síntesis (OECD/PISA 2022, encuestas nacionales)"
+    },
+    {
+      "country": "Finlandia",
+      "academic_perception": -6,
+      "educational_use_pct": 58,
+      "classroom_distraction_pct": 52,
+      "digital_skills_pct": 69,
+      "status": "estimate",
+      "source": "Síntesis (OECD/PISA 2022, encuestas nacionales)"
+    }
+  ],
+  "note": "PISA 2022: el uso de dispositivos para ocio en clase se asocia con menor desempeño."
+}

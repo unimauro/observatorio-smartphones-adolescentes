@@ -1,0 +1,56 @@
+{
+  "country": "Perú",
+  "indicators": [
+    {
+      "metric": "Hogares con acceso a internet",
+      "value_pct": 64,
+      "source": "INEI ENAHO 2023",
+      "status": "verified"
+    },
+    {
+      "metric": "Población que usa internet (≥6 años)",
+      "value_pct": 76,
+      "source": "INEI 2023",
+      "status": "verified"
+    },
+    {
+      "metric": "Adolescentes con smartphone propio (aprox.)",
+      "value_pct": 68,
+      "source": "Síntesis INEI/encuestas",
+      "status": "estimate"
+    },
+    {
+      "metric": "Edad promedio del primer smartphone (aprox.)",
+      "value_pct": 11.6,
+      "source": "Síntesis",
+      "status": "estimate"
+    },
+    {
+      "metric": "Horas de pantalla/día (aprox.)",
+      "value_pct": 6.5,
+      "source": "Síntesis",
+      "status": "estimate"
+    },
+    {
+      "metric": "Ciberacoso escolar reportado (SíseVe)",
+      "value_pct": 21,
+      "source": "MINEDU - SíseVe (síntesis)",
+      "status": "estimate"
+    }
+  ],
+  "note": "Integra fuentes nacionales: INEI (ENAHO/ENDES), MINSA, MINEDU (SíseVe). Cifras 'estimate' son aproximaciones por síntesis; verificar en la fuente.",
+  "sources": [
+    {
+      "name": "INEI - Estadísticas de las TIC en los hogares",
+      "url": "https://www.inei.gob.pe/"
+    },
+    {
+      "name": "MINSA - Salud mental del adolescente",
+      "url": "https://www.gob.pe/minsa"
+    },
+    {
+      "name": "MINEDU - SíseVe (violencia escolar)",
+      "url": "https://www.siseve.pe/"
+    }
+  ]
+}

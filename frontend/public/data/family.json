@@ -1,0 +1,70 @@
+{
+  "rows": [
+    {
+      "metric": "Hogares con normas de uso",
+      "value_pct": 58,
+      "status": "estimate",
+      "source": "Síntesis (Pew Parenting 2020, encuestas regionales)"
+    },
+    {
+      "metric": "Supervisión parental activa",
+      "value_pct": 46,
+      "status": "estimate",
+      "source": "Síntesis (Pew Parenting 2020, encuestas regionales)"
+    },
+    {
+      "metric": "Padres que usan control parental",
+      "value_pct": 39,
+      "status": "estimate",
+      "source": "Síntesis (Pew Parenting 2020, encuestas regionales)"
+    },
+    {
+      "metric": "Padres que perciben riesgo alto",
+      "value_pct": 67,
+      "status": "estimate",
+      "source": "Síntesis (Pew Parenting 2020, encuestas regionales)"
+    },
+    {
+      "metric": "Acuerdan límites de tiempo",
+      "value_pct": 51,
+      "status": "estimate",
+      "source": "Síntesis (Pew Parenting 2020, encuestas regionales)"
+    },
+    {
+      "metric": "Revisan el dispositivo del hijo",
+      "value_pct": 43,
+      "status": "estimate",
+      "source": "Síntesis (Pew Parenting 2020, encuestas regionales)"
+    }
+  ],
+  "first_phone_given_age": [
+    {
+      "country": "Perú",
+      "age": 11.6
+    },
+    {
+      "country": "México",
+      "age": 11.2
+    },
+    {
+      "country": "Chile",
+      "age": 10.7
+    },
+    {
+      "country": "Brasil",
+      "age": 10.9
+    },
+    {
+      "country": "España",
+      "age": 11.0
+    },
+    {
+      "country": "EE.UU.",
+      "age": 10.3
+    },
+    {
+      "country": "Corea del Sur",
+      "age": 10.2
+    }
+  ]
+}

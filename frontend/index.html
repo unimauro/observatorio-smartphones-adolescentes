@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Observatorio Global del Uso de Smartphones en Adolescentes</title>
+    <meta name="description" content="Dashboard interactivo que consolida evidencia científica y datos abiertos sobre el uso de smartphones, redes sociales e internet en adolescentes: panorama mundial, salud mental, educación, riesgos digitales, familia, LATAM, Perú, biblioteca científica y línea de tiempo." />
+    <meta name="keywords" content="adolescentes, smartphones, salud mental, redes sociales, tiempo de pantalla, ciberacoso, educación digital, Perú, LATAM, investigación, UNICEF, OMS, Pew, Common Sense, datos abiertos" />
+    <meta name="author" content="Carlos Cárdenas Fernández (unimauro)" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#0b1220" />
+    <link rel="canonical" href="https://unimauro.github.io/observatorio-smartphones-adolescentes/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Observatorio Global del Uso de Smartphones en Adolescentes" />
+    <meta property="og:description" content="Evidencia científica y datos abiertos sobre adolescentes y pantallas: salud mental, educación, riesgos, familia y foco en Perú/LATAM." />
+    <meta property="og:url" content="https://unimauro.github.io/observatorio-smartphones-adolescentes/" />
+    <meta property="og:image" content="https://unimauro.github.io/observatorio-smartphones-adolescentes/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://unimauro.github.io/observatorio-smartphones-adolescentes/og.png" />
+
+    <link rel="icon" type="image/svg+xml" href="/observatorio-smartphones-adolescentes/favicon.svg" />
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <script>
+      try { if (localStorage.getItem("obs-theme") === "light") document.documentElement.classList.add("light"); } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

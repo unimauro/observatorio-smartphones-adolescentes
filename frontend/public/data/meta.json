@@ -1,0 +1,24 @@
+{
+  "title": "Observatorio Global del Uso de Smartphones en Adolescentes",
+  "generated_by": "etl/build_data.py",
+  "n_countries": 28,
+  "n_studies": 12,
+  "disclaimer": "Plataforma de síntesis con fines educativos y de investigación. Las cifras marcadas 'estimate' son aproximaciones por síntesis de varias fuentes y no constituyen estadística oficial. Verificar en la fuente citada antes de citar.",
+  "sources": [
+    "UNICEF",
+    "UNESCO",
+    "WHO (HBSC)",
+    "OECD/PISA",
+    "Global Kids Online",
+    "World Bank",
+    "Pew Research Center",
+    "Common Sense Media",
+    "NIH/PubMed",
+    "DataReportal",
+    "ITU",
+    "CEPAL",
+    "INEI Perú",
+    "MINSA Perú",
+    "MINEDU Perú"
+  ]
+}

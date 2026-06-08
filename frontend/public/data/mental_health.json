@@ -1,0 +1,200 @@
+{
+  "rows": [
+    {
+      "country": "Estados Unidos",
+      "anxiety_pct": 32,
+      "depression_pct": 21,
+      "stress_pct": 36,
+      "loneliness_pct": 30,
+      "cyberbullying_victim_pct": 16,
+      "sleep_problems_pct": 38,
+      "low_self_esteem_pct": 28,
+      "status": "estimate",
+      "source": "Síntesis del Observatorio (ITU, GSMA, Pew, Common Sense, encuestas nacionales)"
+    },
+    {
+      "country": "Reino Unido",
+      "anxiety_pct": 30,
+      "depression_pct": 19,
+      "stress_pct": 34,
+      "loneliness_pct": 28,
+      "cyberbullying_victim_pct": 19,
+      "sleep_problems_pct": 36,
+      "low_self_esteem_pct": 27,
+      "status": "estimate",
+      "source": "Síntesis del Observatorio (ITU, GSMA, Pew, Common Sense, encuestas nacionales)"
+    },
+    {
+      "country": "España",
+      "anxiety_pct": 28,
+      "depression_pct": 17,
+      "stress_pct": 33,
+      "loneliness_pct": 26,
+      "cyberbullying_victim_pct": 15,
+      "sleep_problems_pct": 34,
+      "low_self_esteem_pct": 25,
+      "status": "estimate",
+      "source": "Síntesis del Observatorio (ITU, GSMA, Pew, Common Sense, encuestas nacionales)"
+    },
+    {
+      "country": "Corea del Sur",
+      "anxiety_pct": 34,
+      "depression_pct": 22,
+      "stress_pct": 41,
+      "loneliness_pct": 24,
+      "cyberbullying_victim_pct": 14,
+      "sleep_problems_pct": 44,
+      "low_self_esteem_pct": 30,
+      "status": "estimate",
+      "source": "Síntesis del Observatorio (ITU, GSMA, Pew, Common Sense, encuestas nacionales)"
+    },
+    {
+      "country": "México",
+      "anxiety_pct": 27,
+      "depression_pct": 18,
+      "stress_pct": 32,
+      "loneliness_pct": 27,
+      "cyberbullying_victim_pct": 18,
+      "sleep_problems_pct": 33,
+      "low_self_esteem_pct": 26,
+      "status": "estimate",
+      "source": "Síntesis del Observatorio (ITU, GSMA, Pew, Common Sense, encuestas nacionales)"
+    },
+    {
+      "country": "Brasil",
+      "anxiety_pct": 29,
+      "depression_pct": 20,
+      "stress_pct": 35,
+      "loneliness_pct": 29,
+      "cyberbullying_victim_pct": 20,
+      "sleep_problems_pct": 35,
+      "low_self_esteem_pct": 27,
+      "status": "estimate",
+      "source": "Síntesis del Observatorio (ITU, GSMA, Pew, Common Sense, encuestas nacionales)"
+    },
+    {
+      "country": "Chile",
+      "anxiety_pct": 31,
+      "depression_pct": 21,
+      "stress_pct": 37,
+      "loneliness_pct": 28,
+      "cyberbullying_victim_pct": 19,
+      "sleep_problems_pct": 37,
+      "low_self_esteem_pct": 28,
+      "status": "estimate",
+      "source": "Síntesis del Observatorio (ITU, GSMA, Pew, Common Sense, encuestas nacionales)"
+    },
+    {
+      "country": "Perú",
+      "anxiety_pct": 30,
+      "depression_pct": 19,
+      "stress_pct": 34,
+      "loneliness_pct": 31,
+      "cyberbullying_victim_pct": 21,
+      "sleep_problems_pct": 36,
+      "low_self_esteem_pct": 29,
+      "status": "estimate",
+      "source": "Síntesis del Observatorio (ITU, GSMA, Pew, Common Sense, encuestas nacionales)"
+    },
+    {
+      "country": "Colombia",
+      "anxiety_pct": 28,
+      "depression_pct": 18,
+      "stress_pct": 33,
+      "loneliness_pct": 30,
+      "cyberbullying_victim_pct": 20,
+      "sleep_problems_pct": 34,
+      "low_self_esteem_pct": 27,
+      "status": "estimate",
+      "source": "Síntesis del Observatorio (ITU, GSMA, Pew, Common Sense, encuestas nacionales)"
+    },
+    {
+      "country": "Argentina",
+      "anxiety_pct": 29,
+      "depression_pct": 19,
+      "stress_pct": 34,
+      "loneliness_pct": 28,
+      "cyberbullying_victim_pct": 18,
+      "sleep_problems_pct": 35,
+      "low_self_esteem_pct": 26,
+      "status": "estimate",
+      "source": "Síntesis del Observatorio (ITU, GSMA, Pew, Common Sense, encuestas nacionales)"
+    },
+    {
+      "country": "Japón",
+      "anxiety_pct": 26,
+      "depression_pct": 16,
+      "stress_pct": 38,
+      "loneliness_pct": 32,
+      "cyberbullying_victim_pct": 12,
+      "sleep_problems_pct": 40,
+      "low_self_esteem_pct": 31,
+      "status": "estimate",
+      "source": "Síntesis del Observatorio (ITU, GSMA, Pew, Common Sense, encuestas nacionales)"
+    },
+    {
+      "country": "Suecia",
+      "anxiety_pct": 27,
+      "depression_pct": 18,
+      "stress_pct": 31,
+      "loneliness_pct": 24,
+      "cyberbullying_victim_pct": 14,
+      "sleep_problems_pct": 30,
+      "low_self_esteem_pct": 22,
+      "status": "estimate",
+      "source": "Síntesis del Observatorio (ITU, GSMA, Pew, Common Sense, encuestas nacionales)"
+    }
+  ],
+  "correlation": {
+    "x_label": "Horas de pantalla/día",
+    "y_label": "Síntomas depresivos (%)",
+    "points": [
+      {
+        "daily_hours": 1,
+        "depression_pct": 11
+      },
+      {
+        "daily_hours": 2,
+        "depression_pct": 12
+      },
+      {
+        "daily_hours": 3,
+        "depression_pct": 13
+      },
+      {
+        "daily_hours": 4,
+        "depression_pct": 15
+      },
+      {
+        "daily_hours": 5,
+        "depression_pct": 16
+      },
+      {
+        "daily_hours": 6,
+        "depression_pct": 18
+      },
+      {
+        "daily_hours": 7,
+        "depression_pct": 21
+      },
+      {
+        "daily_hours": 8,
+        "depression_pct": 24
+      },
+      {
+        "daily_hours": 9,
+        "depression_pct": 27
+      },
+      {
+        "daily_hours": 10,
+        "depression_pct": 31
+      },
+      {
+        "daily_hours": 11,
+        "depression_pct": 34
+      }
+    ],
+    "note": "Asociación positiva pequeña-moderada reportada en la literatura (no implica causalidad). Ver Twenge 2018, Riehm 2019, Orben & Przybylski 2019.",
+    "status": "illustrative"
+  }
+}
